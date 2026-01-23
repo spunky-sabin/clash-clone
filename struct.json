@@ -1,0 +1,3758 @@
+{
+  "home": {
+    "Army": [
+      {
+        "name": "Army Camp",
+        "id": 1000000,
+        "unlock": 1,
+        "superchargeable": false,
+        "upgrade_resource": "Elixir",
+        "levels": [
+          {
+            "level": 13,
+            "count": 4,
+            "totalcosttill": 192248800,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Barracks",
+        "id": 1000006,
+        "unlock": 1,
+        "superchargeable": false,
+        "upgrade_resource": "Elixir",
+        "levels": [
+          {
+            "level": 19,
+            "count": 1,
+            "totalcosttill": 96318100,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Laboratory",
+        "id": 1000007,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Elixir",
+        "levels": [
+          {
+            "level": 16,
+            "count": 1,
+            "totalcosttill": 91180000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Clan Castle",
+        "id": 1000014,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Elixir",
+        "levels": [
+          {
+            "level": 14,
+            "count": 1,
+            "totalcosttill": 108360000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Spell Factory",
+        "id": 1000020,
+        "unlock": 5,
+        "superchargeable": false,
+        "upgrade_resource": "Elixir",
+        "levels": [
+          {
+            "level": 9,
+            "count": 1,
+            "totalcosttill": 54750000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Dark Barracks",
+        "id": 1000026,
+        "unlock": 7,
+        "superchargeable": false,
+        "upgrade_resource": "Elixir",
+        "levels": [
+          {
+            "level": 12,
+            "count": 1,
+            "totalcosttill": 68700000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Dark Spell Factory",
+        "id": 1000029,
+        "unlock": 8,
+        "superchargeable": false,
+        "upgrade_resource": "Elixir",
+        "levels": [
+          {
+            "level": 7,
+            "count": 1,
+            "totalcosttill": 19690000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Workshop",
+        "id": 1000059,
+        "unlock": 12,
+        "superchargeable": false,
+        "upgrade_resource": "Elixir",
+        "levels": [
+          {
+            "level": 8,
+            "count": 1,
+            "totalcosttill": 62800000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Pet House",
+        "id": 1000068,
+        "unlock": 14,
+        "superchargeable": false,
+        "upgrade_resource": "Elixir",
+        "levels": [
+          {
+            "level": 11,
+            "count": 1,
+            "totalcosttill": 91500000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Blacksmith",
+        "id": 1000070,
+        "unlock": 8,
+        "superchargeable": false,
+        "upgrade_resource": "Elixir",
+        "levels": [
+          {
+            "level": 9,
+            "count": 1,
+            "totalcosttill": 48500000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Hero Hall",
+        "id": 1000071,
+        "unlock": 7,
+        "superchargeable": false,
+        "upgrade_resource": "Elixir",
+        "levels": [
+          {
+            "level": 11,
+            "count": 1,
+            "totalcosttill": 76200000,
+            "nextcost": {
+              "11 -> 12": 26000000
+            }
+          }
+        ]
+      }
+    ],
+    "Town Hall": [
+      {
+        "name": "Town Hall",
+        "id": 1000001,
+        "unlock": 0,
+        "superchargeable": false,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 18,
+            "count": 1,
+            "totalcosttill": 109680000,
+            "nextcost": {}
+          }
+        ]
+      }
+    ],
+    "Resource": [
+      {
+        "name": "Elixir Collector",
+        "id": 1000002,
+        "unlock": 1,
+        "superchargeable": true,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 16,
+            "count": 6,
+            "totalcosttill": 29043300,
+            "nextcost": {
+              "16 -> 17": 8000000
+            }
+          },
+          {
+            "level": 17,
+            "count": 1,
+            "totalcosttill": 12840550,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Elixir Storage",
+        "id": 1000003,
+        "unlock": 1,
+        "superchargeable": false,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 18,
+            "count": 4,
+            "totalcosttill": 116194200,
+            "nextcost": {
+              "18 -> 19": 18000000
+            }
+          }
+        ]
+      },
+      {
+        "name": "Gold Mine",
+        "id": 1000004,
+        "unlock": 1,
+        "superchargeable": true,
+        "upgrade_resource": "Elixir",
+        "levels": [
+          {
+            "level": 16,
+            "count": 4,
+            "totalcosttill": 19362200,
+            "nextcost": {
+              "16 -> 17": 8000000
+            }
+          },
+          {
+            "level": 17,
+            "count": 3,
+            "totalcosttill": 38521650,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Gold Storage",
+        "id": 1000005,
+        "unlock": 1,
+        "superchargeable": false,
+        "upgrade_resource": "Elixir",
+        "levels": [
+          {
+            "level": 18,
+            "count": 4,
+            "totalcosttill": 116194200,
+            "nextcost": {
+              "18 -> 19": 18000000
+            }
+          }
+        ]
+      },
+      {
+        "name": "Dark Elixir Drill",
+        "id": 1000023,
+        "unlock": 7,
+        "superchargeable": true,
+        "upgrade_resource": "Elixir",
+        "levels": [
+          {
+            "level": 10,
+            "count": 2,
+            "totalcosttill": 36780000,
+            "nextcost": {
+              "10 -> 11": 12000000
+            }
+          },
+          {
+            "level": 11,
+            "count": 1,
+            "totalcosttill": 30390000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Dark Elixir Storage",
+        "id": 1000024,
+        "unlock": 7,
+        "superchargeable": false,
+        "upgrade_resource": "Elixir",
+        "levels": [
+          {
+            "level": 12,
+            "count": 1,
+            "totalcosttill": 57450000,
+            "nextcost": {
+              "12 -> 13": 25000000
+            }
+          }
+        ]
+      }
+    ],
+    "Defense": [
+      {
+        "name": "Archer Tower",
+        "id": 1000009,
+        "unlock": 2,
+        "superchargeable": false,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 21,
+            "count": 2,
+            "totalcosttill": 41376000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Wizard Tower",
+        "id": 1000011,
+        "unlock": 5,
+        "superchargeable": true,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 13,
+            "count": 1,
+            "totalcosttill": 15610000,
+            "nextcost": {
+              "13 -> 14": 4500000,
+              "14 -> 15": 5500000,
+              "15 -> 16": 8000000,
+              "16 -> 17": 14000000
+            }
+          },
+          {
+            "level": 17,
+            "count": 3,
+            "totalcosttill": 142830000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Air Defense",
+        "id": 1000012,
+        "unlock": 4,
+        "superchargeable": true,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 15,
+            "count": 4,
+            "totalcosttill": 236688000,
+            "nextcost": {
+              "15 -> 16": 26000000
+            }
+          }
+        ]
+      },
+      {
+        "name": "Mortar",
+        "id": 1000013,
+        "unlock": 3,
+        "superchargeable": true,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 16,
+            "count": 3,
+            "totalcosttill": 91200000,
+            "nextcost": {
+              "16 -> 17": 13000000
+            }
+          },
+          {
+            "level": 17,
+            "count": 1,
+            "totalcosttill": 43400000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Hidden Tesla",
+        "id": 1000019,
+        "unlock": 7,
+        "superchargeable": true,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 15,
+            "count": 5,
+            "totalcosttill": 192000000,
+            "nextcost": {
+              "15 -> 16": 15000000
+            }
+          }
+        ]
+      },
+      {
+        "name": "X-Bow",
+        "id": 1000021,
+        "unlock": 9,
+        "superchargeable": true,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 12,
+            "count": 4,
+            "totalcosttill": 294000000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Inferno Tower",
+        "id": 1000027,
+        "unlock": 10,
+        "superchargeable": true,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 11,
+            "count": 3,
+            "totalcosttill": 217500000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Air Sweeper",
+        "id": 1000028,
+        "unlock": 6,
+        "superchargeable": false,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 7,
+            "count": 2,
+            "totalcosttill": 16500000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Bomb Tower",
+        "id": 1000032,
+        "unlock": 8,
+        "superchargeable": true,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 12,
+            "count": 2,
+            "totalcosttill": 107400000,
+            "nextcost": {
+              "12 -> 13": 25000000
+            }
+          }
+        ]
+      },
+      {
+        "name": "Scattershot",
+        "id": 1000067,
+        "unlock": 13,
+        "superchargeable": true,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 6,
+            "count": 2,
+            "totalcosttill": 136000000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Spell Tower",
+        "id": 1000072,
+        "unlock": 15,
+        "superchargeable": false,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 3,
+            "count": 2,
+            "totalcosttill": 64000000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Monolith",
+        "id": 1000077,
+        "unlock": 15,
+        "superchargeable": true,
+        "upgrade_resource": "Dark Elixir",
+        "levels": [
+          {
+            "level": 4,
+            "count": 1,
+            "totalcosttill": 1010000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Multi-Gear Tower",
+        "id": 1000079,
+        "unlock": 17,
+        "superchargeable": true,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 2,
+            "count": 1,
+            "totalcosttill": 35000000,
+            "nextcost": {
+              "2 -> 3": 28000000
+            }
+          }
+        ]
+      },
+      {
+        "name": "Multi-Archer Tower",
+        "id": 1000084,
+        "unlock": 16,
+        "superchargeable": true,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 3,
+            "count": 3,
+            "totalcosttill": 127500000,
+            "nextcost": {
+              "3 -> 4": 27000000
+            }
+          }
+        ]
+      },
+      {
+        "name": "Ricochet Cannon",
+        "id": 1000085,
+        "unlock": 16,
+        "superchargeable": true,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 3,
+            "count": 3,
+            "totalcosttill": 127500000,
+            "nextcost": {
+              "3 -> 4": 26500000
+            }
+          }
+        ]
+      },
+      {
+        "name": "Revenge Tower",
+        "id": 1000086,
+        "unlock": 18,
+        "superchargeable": false,
+        "upgrade_resource": "Dark Elixir",
+        "levels": [
+          {
+            "level": 1,
+            "count": 1,
+            "totalcosttill": 430000,
+            "nextcost": {
+              "1 -> 2": 460000
+            }
+          }
+        ]
+      },
+      {
+        "name": "Firespitter",
+        "id": 1000089,
+        "unlock": 17,
+        "superchargeable": true,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 2,
+            "count": 2,
+            "totalcosttill": 70000000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Crafting Station",
+        "id": 1000097,
+        "unlock": 0,
+        "superchargeable": false,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 0,
+            "count": 1,
+            "totalcosttill": 0,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Super Wizard Tower",
+        "id": 1000102,
+        "unlock": 18,
+        "superchargeable": true,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 0,
+            "count": 1,
+            "totalcosttill": 0,
+            "nextcost": {
+              "0 -> 1": 29000000,
+              "1 -> 2": 30000000
+            }
+          }
+        ]
+      }
+    ],
+    "Wall": [
+      {
+        "name": "Wall",
+        "id": 1000010,
+        "unlock": 2,
+        "superchargeable": false,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 17,
+            "count": 258,
+            "totalcosttill": 4512678000,
+            "nextcost": {
+              "17 -> 18": 7000000,
+              "18 -> 19": 10000000
+            }
+          },
+          {
+            "level": 18,
+            "count": 67,
+            "totalcosttill": 1640897000,
+            "nextcost": {
+              "18 -> 19": 10000000
+            }
+          }
+        ]
+      }
+    ],
+    "Worker": [
+      {
+        "name": "Builder's Hut",
+        "id": 1000015,
+        "unlock": 1,
+        "superchargeable": true,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 7,
+            "count": 5,
+            "totalcosttill": 217500000,
+            "nextcost": {}
+          }
+        ]
+      }
+    ],
+    "Worker2": [
+      {
+        "name": "B.O.B's Hut",
+        "id": 1000064,
+        "unlock": 0,
+        "superchargeable": false,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 1,
+            "count": 1,
+            "totalcosttill": 0,
+            "nextcost": {}
+          }
+        ]
+      }
+    ],
+    "Helper": [
+      {
+        "name": "Helper Hut",
+        "id": 1000093,
+        "unlock": 0,
+        "superchargeable": false,
+        "upgrade_resource": "Elixir",
+        "levels": [
+          {
+            "level": 1,
+            "count": 1,
+            "totalcosttill": 0,
+            "nextcost": {}
+          }
+        ]
+      }
+    ],
+    "Hero": [
+      {
+        "name": "Barbarian King",
+        "id": 28000000,
+        "unlock": 7,
+        "superchargeable": false,
+        "upgrade_resource": "Dark Elixir",
+        "levels": [
+          {
+            "level": 86,
+            "count": 1,
+            "totalcosttill": 6476500,
+            "nextcost": {
+              "86 -> 87": 240000,
+              "87 -> 88": 250000,
+              "88 -> 89": 260000,
+              "89 -> 90": 270000,
+              "90 -> 91": 280000,
+              "91 -> 92": 290000,
+              "92 -> 93": 300000,
+              "93 -> 94": 310000,
+              "94 -> 95": 320000,
+              "95 -> 96": 340000,
+              "96 -> 97": 350000,
+              "97 -> 98": 360000,
+              "98 -> 99": 370000,
+              "99 -> 100": 380000,
+              "100 -> 101": 400000,
+              "101 -> 102": 410000,
+              "102 -> 103": 420000,
+              "103 -> 104": 430000,
+              "104 -> 105": 450000
+            }
+          }
+        ]
+      },
+      {
+        "name": "Archer Queen",
+        "id": 28000001,
+        "unlock": 8,
+        "superchargeable": false,
+        "upgrade_resource": "Dark Elixir",
+        "levels": [
+          {
+            "level": 93,
+            "count": 1,
+            "totalcosttill": 8366500,
+            "nextcost": {
+              "93 -> 94": 310000,
+              "94 -> 95": 320000,
+              "95 -> 96": 340000,
+              "96 -> 97": 350000,
+              "97 -> 98": 360000,
+              "98 -> 99": 370000,
+              "99 -> 100": 380000,
+              "100 -> 101": 400000,
+              "101 -> 102": 410000,
+              "102 -> 103": 420000,
+              "103 -> 104": 430000,
+              "104 -> 105": 450000
+            }
+          }
+        ]
+      },
+      {
+        "name": "Grand Warden",
+        "id": 28000002,
+        "unlock": 11,
+        "superchargeable": false,
+        "upgrade_resource": "Elixir",
+        "levels": [
+          {
+            "level": 69,
+            "count": 1,
+            "totalcosttill": 583700000,
+            "nextcost": {
+              "69 -> 70": 20000000,
+              "70 -> 71": 20500000,
+              "71 -> 72": 21000000,
+              "72 -> 73": 21500000,
+              "73 -> 74": 22000000,
+              "74 -> 75": 22500000,
+              "75 -> 76": 24000000,
+              "76 -> 77": 25500000,
+              "77 -> 78": 27000000,
+              "78 -> 79": 28500000,
+              "79 -> 80": 30000000
+            }
+          }
+        ]
+      },
+      {
+        "name": "Royal Champion",
+        "id": 28000004,
+        "unlock": 13,
+        "superchargeable": false,
+        "upgrade_resource": "Dark Elixir",
+        "levels": [
+          {
+            "level": 41,
+            "count": 1,
+            "totalcosttill": 4100000,
+            "nextcost": {
+              "41 -> 42": 260000,
+              "42 -> 43": 280000,
+              "43 -> 44": 300000,
+              "44 -> 45": 320000,
+              "45 -> 46": 340000,
+              "46 -> 47": 350000,
+              "47 -> 48": 360000,
+              "48 -> 49": 370000,
+              "49 -> 50": 380000,
+              "50 -> 51": 400000,
+              "51 -> 52": 410000,
+              "52 -> 53": 420000,
+              "53 -> 54": 430000,
+              "54 -> 55": 450000
+            }
+          }
+        ]
+      },
+      {
+        "name": "Minion Prince",
+        "id": 28000006,
+        "unlock": 9,
+        "superchargeable": false,
+        "upgrade_resource": "Dark Elixir",
+        "levels": [
+          {
+            "level": 78,
+            "count": 1,
+            "totalcosttill": 6346500,
+            "nextcost": {
+              "78 -> 79": 270000,
+              "79 -> 80": 280000,
+              "80 -> 81": 290000,
+              "81 -> 82": 300000,
+              "82 -> 83": 310000,
+              "83 -> 84": 320000,
+              "84 -> 85": 330000,
+              "85 -> 86": 340000,
+              "86 -> 87": 350000,
+              "87 -> 88": 360000,
+              "88 -> 89": 370000,
+              "89 -> 90": 380000,
+              "90 -> 91": 400000,
+              "91 -> 92": 410000,
+              "92 -> 93": 420000,
+              "93 -> 94": 430000,
+              "94 -> 95": 450000
+            }
+          }
+        ]
+      }
+    ],
+    "Troops": [
+      {
+        "name": "Barbarian",
+        "id": 4000000,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Elixir",
+        "levels": [
+          {
+            "level": 12,
+            "count": 1,
+            "totalcosttill": 24590000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Archer",
+        "id": 4000001,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Elixir",
+        "levels": [
+          {
+            "level": 13,
+            "count": 1,
+            "totalcosttill": 42600000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Goblin",
+        "id": 4000002,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Elixir",
+        "levels": [
+          {
+            "level": 9,
+            "count": 1,
+            "totalcosttill": 16845000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Giant",
+        "id": 4000003,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Elixir",
+        "levels": [
+          {
+            "level": 13,
+            "count": 1,
+            "totalcosttill": 48690000,
+            "nextcost": {
+              "13 -> 14": 25000000
+            }
+          }
+        ]
+      },
+      {
+        "name": "Wall Breaker",
+        "id": 4000004,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Elixir",
+        "levels": [
+          {
+            "level": 13,
+            "count": 1,
+            "totalcosttill": 58430000,
+            "nextcost": {
+              "13 -> 14": 26000000
+            }
+          }
+        ]
+      },
+      {
+        "name": "Balloon",
+        "id": 4000005,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Elixir",
+        "levels": [
+          {
+            "level": 12,
+            "count": 1,
+            "totalcosttill": 63170000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Wizard",
+        "id": 4000006,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Elixir",
+        "levels": [
+          {
+            "level": 13,
+            "count": 1,
+            "totalcosttill": 56820000,
+            "nextcost": {
+              "13 -> 14": 27000000
+            }
+          }
+        ]
+      },
+      {
+        "name": "Healer",
+        "id": 4000007,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Elixir",
+        "levels": [
+          {
+            "level": 10,
+            "count": 1,
+            "totalcosttill": 64350000,
+            "nextcost": {
+              "10 -> 11": 28500000
+            }
+          }
+        ]
+      },
+      {
+        "name": "Dragon",
+        "id": 4000008,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Elixir",
+        "levels": [
+          {
+            "level": 12,
+            "count": 1,
+            "totalcosttill": 82200000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "P.E.K.K.A",
+        "id": 4000009,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Elixir",
+        "levels": [
+          {
+            "level": 12,
+            "count": 1,
+            "totalcosttill": 62300000,
+            "nextcost": {
+              "12 -> 13": 28000000
+            }
+          }
+        ]
+      },
+      {
+        "name": "Minion",
+        "id": 4000010,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Dark Elixir",
+        "levels": [
+          {
+            "level": 12,
+            "count": 1,
+            "totalcosttill": 562500,
+            "nextcost": {
+              "12 -> 13": 220000,
+              "13 -> 14": 335000
+            }
+          }
+        ]
+      },
+      {
+        "name": "Hog Rider",
+        "id": 4000011,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Dark Elixir",
+        "levels": [
+          {
+            "level": 13,
+            "count": 1,
+            "totalcosttill": 664000,
+            "nextcost": {
+              "13 -> 14": 240000
+            }
+          }
+        ]
+      },
+      {
+        "name": "Valkyrie",
+        "id": 4000012,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Dark Elixir",
+        "levels": [
+          {
+            "level": 11,
+            "count": 1,
+            "totalcosttill": 593000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Golem",
+        "id": 4000013,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Dark Elixir",
+        "levels": [
+          {
+            "level": 13,
+            "count": 1,
+            "totalcosttill": 698500,
+            "nextcost": {
+              "13 -> 14": 230000
+            }
+          }
+        ]
+      },
+      {
+        "name": "Witch",
+        "id": 4000015,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Dark Elixir",
+        "levels": [
+          {
+            "level": 7,
+            "count": 1,
+            "totalcosttill": 486500,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Lava Hound",
+        "id": 4000017,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Dark Elixir",
+        "levels": [
+          {
+            "level": 7,
+            "count": 1,
+            "totalcosttill": 418000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Bowler",
+        "id": 4000022,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Dark Elixir",
+        "levels": [
+          {
+            "level": 8,
+            "count": 1,
+            "totalcosttill": 654000,
+            "nextcost": {
+              "8 -> 9": 260000,
+              "9 -> 10": 360000
+            }
+          }
+        ]
+      },
+      {
+        "name": "Baby Dragon",
+        "id": 4000023,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Elixir",
+        "levels": [
+          {
+            "level": 11,
+            "count": 1,
+            "totalcosttill": 71500000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Miner",
+        "id": 4000024,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Elixir",
+        "levels": [
+          {
+            "level": 11,
+            "count": 1,
+            "totalcosttill": 70000000,
+            "nextcost": {
+              "11 -> 12": 28000000
+            }
+          }
+        ]
+      },
+      {
+        "name": "Yeti",
+        "id": 4000053,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Elixir",
+        "levels": [
+          {
+            "level": 7,
+            "count": 1,
+            "totalcosttill": 65000000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Ice Golem",
+        "id": 4000058,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Dark Elixir",
+        "levels": [
+          {
+            "level": 9,
+            "count": 1,
+            "totalcosttill": 892500,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Electro Dragon",
+        "id": 4000059,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Elixir",
+        "levels": [
+          {
+            "level": 8,
+            "count": 1,
+            "totalcosttill": 83000000,
+            "nextcost": {
+              "8 -> 9": 30000000
+            }
+          }
+        ]
+      },
+      {
+        "name": "Dragon Rider",
+        "id": 4000065,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Elixir",
+        "levels": [
+          {
+            "level": 5,
+            "count": 1,
+            "totalcosttill": 53000000,
+            "nextcost": {
+              "5 -> 6": 29500000
+            }
+          }
+        ]
+      },
+      {
+        "name": "Headhunter",
+        "id": 4000082,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Dark Elixir",
+        "levels": [
+          {
+            "level": 3,
+            "count": 1,
+            "totalcosttill": 147500,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Electro Titan",
+        "id": 4000095,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Elixir",
+        "levels": [
+          {
+            "level": 4,
+            "count": 1,
+            "totalcosttill": 48500000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Apprentice Warden",
+        "id": 4000097,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Dark Elixir",
+        "levels": [
+          {
+            "level": 4,
+            "count": 1,
+            "totalcosttill": 385000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Root Rider",
+        "id": 4000110,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Elixir",
+        "levels": [
+          {
+            "level": 3,
+            "count": 1,
+            "totalcosttill": 32600000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Druid",
+        "id": 4000123,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Dark Elixir",
+        "levels": [
+          {
+            "level": 4,
+            "count": 1,
+            "totalcosttill": 487500,
+            "nextcost": {
+              "4 -> 5": 300000
+            }
+          }
+        ]
+      },
+      {
+        "name": "Thrower",
+        "id": 4000132,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Elixir",
+        "levels": [
+          {
+            "level": 3,
+            "count": 1,
+            "totalcosttill": 34000000,
+            "nextcost": {
+              "3 -> 4": 27000000
+            }
+          }
+        ]
+      },
+      {
+        "name": "Furnace",
+        "id": 4000150,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Dark Elixir",
+        "levels": [
+          {
+            "level": 4,
+            "count": 1,
+            "totalcosttill": 780000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Meteor Golem",
+        "id": 4000177,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Elixir",
+        "levels": [
+          {
+            "level": 3,
+            "count": 1,
+            "totalcosttill": 58000000,
+            "nextcost": {}
+          }
+        ]
+      }
+    ],
+    "Spells": [
+      {
+        "name": "Lightning Spell",
+        "id": 26000000,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Elixir",
+        "levels": [
+          {
+            "level": 11,
+            "count": 1,
+            "totalcosttill": 38950000,
+            "nextcost": {
+              "11 -> 12": 18500000,
+              "12 -> 13": 27000000
+            }
+          }
+        ]
+      },
+      {
+        "name": "Healing Spell",
+        "id": 26000001,
+        "unlock": 4,
+        "superchargeable": false,
+        "upgrade_resource": "Elixir",
+        "levels": [
+          {
+            "level": 10,
+            "count": 1,
+            "totalcosttill": 37225000,
+            "nextcost": {
+              "10 -> 11": 19000000,
+              "11 -> 12": 29000000
+            }
+          }
+        ]
+      },
+      {
+        "name": "Rage Spell",
+        "id": 26000002,
+        "unlock": 5,
+        "superchargeable": false,
+        "upgrade_resource": "Elixir",
+        "levels": [
+          {
+            "level": 6,
+            "count": 1,
+            "totalcosttill": 9200000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Jump Spell",
+        "id": 26000003,
+        "unlock": 6,
+        "superchargeable": false,
+        "upgrade_resource": "Elixir",
+        "levels": [
+          {
+            "level": 5,
+            "count": 1,
+            "totalcosttill": 16000000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Freeze Spell",
+        "id": 26000005,
+        "unlock": 9,
+        "superchargeable": false,
+        "upgrade_resource": "Elixir",
+        "levels": [
+          {
+            "level": 7,
+            "count": 1,
+            "totalcosttill": 23100000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Poison Spell",
+        "id": 26000009,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Dark Elixir",
+        "levels": [
+          {
+            "level": 11,
+            "count": 1,
+            "totalcosttill": 844000,
+            "nextcost": {
+              "11 -> 12": 350000
+            }
+          }
+        ]
+      },
+      {
+        "name": "Earthquake Spell",
+        "id": 26000010,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Dark Elixir",
+        "levels": [
+          {
+            "level": 5,
+            "count": 1,
+            "totalcosttill": 85500,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Haste Spell",
+        "id": 26000011,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Dark Elixir",
+        "levels": [
+          {
+            "level": 6,
+            "count": 1,
+            "totalcosttill": 293500,
+            "nextcost": {
+              "6 -> 7": 320000
+            }
+          }
+        ]
+      },
+      {
+        "name": "Clone Spell",
+        "id": 26000016,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Elixir",
+        "levels": [
+          {
+            "level": 8,
+            "count": 1,
+            "totalcosttill": 33000000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Skeleton Spell",
+        "id": 26000017,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Dark Elixir",
+        "levels": [
+          {
+            "level": 8,
+            "count": 1,
+            "totalcosttill": 353000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Bat Spell",
+        "id": 26000028,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Dark Elixir",
+        "levels": [
+          {
+            "level": 6,
+            "count": 1,
+            "totalcosttill": 261000,
+            "nextcost": {
+              "6 -> 7": 220000,
+              "7 -> 8": 300000
+            }
+          }
+        ]
+      },
+      {
+        "name": "Invisibility Spell",
+        "id": 26000035,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Elixir",
+        "levels": [
+          {
+            "level": 4,
+            "count": 1,
+            "totalcosttill": 18000000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Recall Spell",
+        "id": 26000053,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Elixir",
+        "levels": [
+          {
+            "level": 5,
+            "count": 1,
+            "totalcosttill": 37500000,
+            "nextcost": {
+              "5 -> 6": 19000000
+            }
+          }
+        ]
+      },
+      {
+        "name": "Overgrowth Spell",
+        "id": 26000070,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Dark Elixir",
+        "levels": [
+          {
+            "level": 4,
+            "count": 1,
+            "totalcosttill": 362500,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Revive Spell",
+        "id": 26000098,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Elixir",
+        "levels": [
+          {
+            "level": 4,
+            "count": 1,
+            "totalcosttill": 57000000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Ice Block Spell",
+        "id": 26000109,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Dark Elixir",
+        "levels": [
+          {
+            "level": 5,
+            "count": 1,
+            "totalcosttill": 940000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Totem Spell",
+        "id": 26000120,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Elixir",
+        "levels": [
+          {
+            "level": 3,
+            "count": 1,
+            "totalcosttill": 43000000,
+            "nextcost": {
+              "3 -> 4": 23000000
+            }
+          }
+        ]
+      }
+    ],
+    "Pet": [
+      {
+        "name": "L.A.S.S.I",
+        "id": 73000000,
+        "unlock": 14,
+        "superchargeable": false,
+        "upgrade_resource": "Dark Elixir",
+        "levels": [
+          {
+            "level": 15,
+            "count": 1,
+            "totalcosttill": 1190000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Mighty Yak",
+        "id": 73000001,
+        "unlock": 14,
+        "superchargeable": false,
+        "upgrade_resource": "Dark Elixir",
+        "levels": [
+          {
+            "level": 15,
+            "count": 1,
+            "totalcosttill": 1470000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Electro Owl",
+        "id": 73000002,
+        "unlock": 14,
+        "superchargeable": false,
+        "upgrade_resource": "Dark Elixir",
+        "levels": [
+          {
+            "level": 10,
+            "count": 1,
+            "totalcosttill": 810000,
+            "nextcost": {
+              "10 -> 11": 165000,
+              "11 -> 12": 180000,
+              "12 -> 13": 195000,
+              "13 -> 14": 210000,
+              "14 -> 15": 225000
+            }
+          }
+        ]
+      },
+      {
+        "name": "Unicorn",
+        "id": 73000003,
+        "unlock": 14,
+        "superchargeable": false,
+        "upgrade_resource": "Dark Elixir",
+        "levels": [
+          {
+            "level": 10,
+            "count": 1,
+            "totalcosttill": 990000,
+            "nextcost": {
+              "10 -> 11": 200000,
+              "11 -> 12": 230000,
+              "12 -> 13": 260000,
+              "13 -> 14": 290000,
+              "14 -> 15": 320000
+            }
+          }
+        ]
+      },
+      {
+        "name": "Phoenix",
+        "id": 73000004,
+        "unlock": 15,
+        "superchargeable": false,
+        "upgrade_resource": "Dark Elixir",
+        "levels": [
+          {
+            "level": 10,
+            "count": 1,
+            "totalcosttill": 1245000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Poison Lizard",
+        "id": 73000007,
+        "unlock": 15,
+        "superchargeable": false,
+        "upgrade_resource": "Dark Elixir",
+        "levels": [
+          {
+            "level": 10,
+            "count": 1,
+            "totalcosttill": 975000,
+            "nextcost": {
+              "10 -> 11": 180000,
+              "11 -> 12": 200000,
+              "12 -> 13": 220000,
+              "13 -> 14": 240000,
+              "14 -> 15": 260000
+            }
+          }
+        ]
+      },
+      {
+        "name": "Diggy",
+        "id": 73000008,
+        "unlock": 15,
+        "superchargeable": false,
+        "upgrade_resource": "Dark Elixir",
+        "levels": [
+          {
+            "level": 10,
+            "count": 1,
+            "totalcosttill": 1245000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Frosty",
+        "id": 73000009,
+        "unlock": 15,
+        "superchargeable": false,
+        "upgrade_resource": "Dark Elixir",
+        "levels": [
+          {
+            "level": 15,
+            "count": 1,
+            "totalcosttill": 2455000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Spirit Fox",
+        "id": 73000010,
+        "unlock": 16,
+        "superchargeable": false,
+        "upgrade_resource": "Dark Elixir",
+        "levels": [
+          {
+            "level": 10,
+            "count": 1,
+            "totalcosttill": 1710000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Angry Jelly",
+        "id": 73000011,
+        "unlock": 16,
+        "superchargeable": false,
+        "upgrade_resource": "Dark Elixir",
+        "levels": [
+          {
+            "level": 10,
+            "count": 1,
+            "totalcosttill": 1710000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Sneezy",
+        "id": 73000016,
+        "unlock": 17,
+        "superchargeable": false,
+        "upgrade_resource": "Dark Elixir",
+        "levels": [
+          {
+            "level": 3,
+            "count": 1,
+            "totalcosttill": 420000,
+            "nextcost": {
+              "3 -> 4": 240000,
+              "4 -> 5": 260000,
+              "5 -> 6": 280000,
+              "6 -> 7": 300000,
+              "7 -> 8": 320000,
+              "8 -> 9": 340000,
+              "9 -> 10": 360000
+            }
+          }
+        ]
+      }
+    ],
+    "Equipment": [
+      {
+        "name": "Barbarian Puppet",
+        "id": 90000000,
+        "unlock": 8,
+        "superchargeable": false,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 14,
+            "count": 1,
+            "totalcosttill": null,
+            "nextcost": {
+              "14 -> 15": {
+                "shiny_ore": 2400,
+                "glowy_ore": 600,
+                "starry_ore": 0
+              },
+              "15 -> 16": {
+                "shiny_ore": 2500,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "16 -> 17": {
+                "shiny_ore": 2600,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "17 -> 18": {
+                "shiny_ore": 2700,
+                "glowy_ore": 600,
+                "starry_ore": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Rage Vial",
+        "id": 90000001,
+        "unlock": 8,
+        "superchargeable": false,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 17,
+            "count": 1,
+            "totalcosttill": null,
+            "nextcost": {
+              "17 -> 18": {
+                "shiny_ore": 2700,
+                "glowy_ore": 600,
+                "starry_ore": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Archer Puppet",
+        "id": 90000002,
+        "unlock": 8,
+        "superchargeable": false,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 14,
+            "count": 1,
+            "totalcosttill": null,
+            "nextcost": {
+              "14 -> 15": {
+                "shiny_ore": 2400,
+                "glowy_ore": 600,
+                "starry_ore": 0
+              },
+              "15 -> 16": {
+                "shiny_ore": 2500,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "16 -> 17": {
+                "shiny_ore": 2600,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "17 -> 18": {
+                "shiny_ore": 2700,
+                "glowy_ore": 600,
+                "starry_ore": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Invisibility Vial",
+        "id": 90000003,
+        "unlock": 8,
+        "superchargeable": false,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 14,
+            "count": 1,
+            "totalcosttill": null,
+            "nextcost": {
+              "14 -> 15": {
+                "shiny_ore": 2400,
+                "glowy_ore": 600,
+                "starry_ore": 0
+              },
+              "15 -> 16": {
+                "shiny_ore": 2500,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "16 -> 17": {
+                "shiny_ore": 2600,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "17 -> 18": {
+                "shiny_ore": 2700,
+                "glowy_ore": 600,
+                "starry_ore": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Eternal Tome",
+        "id": 90000004,
+        "unlock": 8,
+        "superchargeable": false,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 18,
+            "count": 1,
+            "totalcosttill": null,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Life Gem",
+        "id": 90000005,
+        "unlock": 8,
+        "superchargeable": false,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 18,
+            "count": 1,
+            "totalcosttill": null,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Seeking Shield",
+        "id": 90000006,
+        "unlock": 8,
+        "superchargeable": false,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 17,
+            "count": 1,
+            "totalcosttill": null,
+            "nextcost": {
+              "17 -> 18": {
+                "shiny_ore": 2700,
+                "glowy_ore": 600,
+                "starry_ore": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Royal Gem",
+        "id": 90000007,
+        "unlock": 8,
+        "superchargeable": false,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 14,
+            "count": 1,
+            "totalcosttill": null,
+            "nextcost": {
+              "14 -> 15": {
+                "shiny_ore": 2400,
+                "glowy_ore": 600,
+                "starry_ore": 0
+              },
+              "15 -> 16": {
+                "shiny_ore": 2500,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "16 -> 17": {
+                "shiny_ore": 2600,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "17 -> 18": {
+                "shiny_ore": 2700,
+                "glowy_ore": 600,
+                "starry_ore": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Earthquake Boots",
+        "id": 90000008,
+        "unlock": 8,
+        "superchargeable": false,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 18,
+            "count": 1,
+            "totalcosttill": null,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Hog Rider Puppet",
+        "id": 90000009,
+        "unlock": 14,
+        "superchargeable": false,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 18,
+            "count": 1,
+            "totalcosttill": null,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Giant Gauntlet",
+        "id": 90000010,
+        "unlock": 8,
+        "superchargeable": false,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 8,
+            "count": 1,
+            "totalcosttill": null,
+            "nextcost": {
+              "8 -> 9": {
+                "shiny_ore": 1800,
+                "glowy_ore": 200,
+                "starry_ore": 10
+              },
+              "9 -> 10": {
+                "shiny_ore": 1900,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "10 -> 11": {
+                "shiny_ore": 2000,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "11 -> 12": {
+                "shiny_ore": 2100,
+                "glowy_ore": 400,
+                "starry_ore": 20
+              },
+              "12 -> 13": {
+                "shiny_ore": 2200,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "13 -> 14": {
+                "shiny_ore": 2300,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "14 -> 15": {
+                "shiny_ore": 2400,
+                "glowy_ore": 600,
+                "starry_ore": 30
+              },
+              "15 -> 16": {
+                "shiny_ore": 2500,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "16 -> 17": {
+                "shiny_ore": 2600,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "17 -> 18": {
+                "shiny_ore": 2700,
+                "glowy_ore": 600,
+                "starry_ore": 50
+              },
+              "18 -> 19": {
+                "shiny_ore": 2800,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "19 -> 20": {
+                "shiny_ore": 2900,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "20 -> 21": {
+                "shiny_ore": 3000,
+                "glowy_ore": 600,
+                "starry_ore": 100
+              },
+              "21 -> 22": {
+                "shiny_ore": 3100,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "22 -> 23": {
+                "shiny_ore": 3200,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "23 -> 24": {
+                "shiny_ore": 3300,
+                "glowy_ore": 600,
+                "starry_ore": 120
+              },
+              "24 -> 25": {
+                "shiny_ore": 3400,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "25 -> 26": {
+                "shiny_ore": 3500,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "26 -> 27": {
+                "shiny_ore": 3600,
+                "glowy_ore": 600,
+                "starry_ore": 150
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Vampstache",
+        "id": 90000011,
+        "unlock": 10,
+        "superchargeable": false,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 18,
+            "count": 1,
+            "totalcosttill": null,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Haste Vial",
+        "id": 90000012,
+        "unlock": 15,
+        "superchargeable": false,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 18,
+            "count": 1,
+            "totalcosttill": null,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Rocket Spear",
+        "id": 90000013,
+        "unlock": 8,
+        "superchargeable": false,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 23,
+            "count": 1,
+            "totalcosttill": null,
+            "nextcost": {
+              "23 -> 24": {
+                "shiny_ore": 3300,
+                "glowy_ore": 600,
+                "starry_ore": 120
+              },
+              "24 -> 25": {
+                "shiny_ore": 3400,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "25 -> 26": {
+                "shiny_ore": 3500,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "26 -> 27": {
+                "shiny_ore": 3600,
+                "glowy_ore": 600,
+                "starry_ore": 150
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Spiky Ball",
+        "id": 90000014,
+        "unlock": 8,
+        "superchargeable": false,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 26,
+            "count": 1,
+            "totalcosttill": null,
+            "nextcost": {
+              "26 -> 27": {
+                "shiny_ore": 3600,
+                "glowy_ore": 600,
+                "starry_ore": 150
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Frozen Arrow",
+        "id": 90000015,
+        "unlock": 8,
+        "superchargeable": false,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 20,
+            "count": 1,
+            "totalcosttill": null,
+            "nextcost": {
+              "20 -> 21": {
+                "shiny_ore": 3000,
+                "glowy_ore": 600,
+                "starry_ore": 100
+              },
+              "21 -> 22": {
+                "shiny_ore": 3100,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "22 -> 23": {
+                "shiny_ore": 3200,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "23 -> 24": {
+                "shiny_ore": 3300,
+                "glowy_ore": 600,
+                "starry_ore": 120
+              },
+              "24 -> 25": {
+                "shiny_ore": 3400,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "25 -> 26": {
+                "shiny_ore": 3500,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "26 -> 27": {
+                "shiny_ore": 3600,
+                "glowy_ore": 600,
+                "starry_ore": 150
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Giant Arrow",
+        "id": 90000017,
+        "unlock": 9,
+        "superchargeable": false,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 18,
+            "count": 1,
+            "totalcosttill": null,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Heroic Torch",
+        "id": 90000019,
+        "unlock": 8,
+        "superchargeable": false,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 14,
+            "count": 1,
+            "totalcosttill": null,
+            "nextcost": {
+              "14 -> 15": {
+                "shiny_ore": 2400,
+                "glowy_ore": 600,
+                "starry_ore": 30
+              },
+              "15 -> 16": {
+                "shiny_ore": 2500,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "16 -> 17": {
+                "shiny_ore": 2600,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "17 -> 18": {
+                "shiny_ore": 2700,
+                "glowy_ore": 600,
+                "starry_ore": 50
+              },
+              "18 -> 19": {
+                "shiny_ore": 2800,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "19 -> 20": {
+                "shiny_ore": 2900,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "20 -> 21": {
+                "shiny_ore": 3000,
+                "glowy_ore": 600,
+                "starry_ore": 100
+              },
+              "21 -> 22": {
+                "shiny_ore": 3100,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "22 -> 23": {
+                "shiny_ore": 3200,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "23 -> 24": {
+                "shiny_ore": 3300,
+                "glowy_ore": 600,
+                "starry_ore": 120
+              },
+              "24 -> 25": {
+                "shiny_ore": 3400,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "25 -> 26": {
+                "shiny_ore": 3500,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "26 -> 27": {
+                "shiny_ore": 3600,
+                "glowy_ore": 600,
+                "starry_ore": 150
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Healer Puppet",
+        "id": 90000020,
+        "unlock": 12,
+        "superchargeable": false,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 18,
+            "count": 1,
+            "totalcosttill": null,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Fireball",
+        "id": 90000022,
+        "unlock": 8,
+        "superchargeable": false,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 26,
+            "count": 1,
+            "totalcosttill": null,
+            "nextcost": {
+              "26 -> 27": {
+                "shiny_ore": 3600,
+                "glowy_ore": 600,
+                "starry_ore": 150
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Rage Gem",
+        "id": 90000024,
+        "unlock": 11,
+        "superchargeable": false,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 18,
+            "count": 1,
+            "totalcosttill": null,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Snake Bracelet",
+        "id": 90000032,
+        "unlock": 8,
+        "superchargeable": false,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 23,
+            "count": 1,
+            "totalcosttill": null,
+            "nextcost": {
+              "23 -> 24": {
+                "shiny_ore": 3300,
+                "glowy_ore": 600,
+                "starry_ore": 120
+              },
+              "24 -> 25": {
+                "shiny_ore": 3400,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "25 -> 26": {
+                "shiny_ore": 3500,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "26 -> 27": {
+                "shiny_ore": 3600,
+                "glowy_ore": 600,
+                "starry_ore": 150
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Healing Tome",
+        "id": 90000034,
+        "unlock": 13,
+        "superchargeable": false,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 18,
+            "count": 1,
+            "totalcosttill": null,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Dark Crown",
+        "id": 90000035,
+        "unlock": 8,
+        "superchargeable": false,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 17,
+            "count": 1,
+            "totalcosttill": null,
+            "nextcost": {
+              "17 -> 18": {
+                "shiny_ore": 2700,
+                "glowy_ore": 600,
+                "starry_ore": 50
+              },
+              "18 -> 19": {
+                "shiny_ore": 2800,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "19 -> 20": {
+                "shiny_ore": 2900,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "20 -> 21": {
+                "shiny_ore": 3000,
+                "glowy_ore": 600,
+                "starry_ore": 100
+              },
+              "21 -> 22": {
+                "shiny_ore": 3100,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "22 -> 23": {
+                "shiny_ore": 3200,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "23 -> 24": {
+                "shiny_ore": 3300,
+                "glowy_ore": 600,
+                "starry_ore": 120
+              },
+              "24 -> 25": {
+                "shiny_ore": 3400,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "25 -> 26": {
+                "shiny_ore": 3500,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "26 -> 27": {
+                "shiny_ore": 3600,
+                "glowy_ore": 600,
+                "starry_ore": 150
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Magic Mirror",
+        "id": 90000039,
+        "unlock": 8,
+        "superchargeable": false,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 26,
+            "count": 1,
+            "totalcosttill": null,
+            "nextcost": {
+              "26 -> 27": {
+                "shiny_ore": 3600,
+                "glowy_ore": 600,
+                "starry_ore": 150
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Electro Boots",
+        "id": 90000040,
+        "unlock": 8,
+        "superchargeable": false,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 23,
+            "count": 1,
+            "totalcosttill": null,
+            "nextcost": {
+              "23 -> 24": {
+                "shiny_ore": 3300,
+                "glowy_ore": 600,
+                "starry_ore": 120
+              },
+              "24 -> 25": {
+                "shiny_ore": 3400,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "25 -> 26": {
+                "shiny_ore": 3500,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "26 -> 27": {
+                "shiny_ore": 3600,
+                "glowy_ore": 600,
+                "starry_ore": 150
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Lavaloon Puppet",
+        "id": 90000041,
+        "unlock": 8,
+        "superchargeable": false,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 23,
+            "count": 1,
+            "totalcosttill": null,
+            "nextcost": {
+              "23 -> 24": {
+                "shiny_ore": 3300,
+                "glowy_ore": 600,
+                "starry_ore": 120
+              },
+              "24 -> 25": {
+                "shiny_ore": 3400,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "25 -> 26": {
+                "shiny_ore": 3500,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "26 -> 27": {
+                "shiny_ore": 3600,
+                "glowy_ore": 600,
+                "starry_ore": 150
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Henchmen Puppet",
+        "id": 90000042,
+        "unlock": 8,
+        "superchargeable": false,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 11,
+            "count": 1,
+            "totalcosttill": null,
+            "nextcost": {
+              "11 -> 12": {
+                "shiny_ore": 2100,
+                "glowy_ore": 400,
+                "starry_ore": 0
+              },
+              "12 -> 13": {
+                "shiny_ore": 2200,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "13 -> 14": {
+                "shiny_ore": 2300,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "14 -> 15": {
+                "shiny_ore": 2400,
+                "glowy_ore": 600,
+                "starry_ore": 0
+              },
+              "15 -> 16": {
+                "shiny_ore": 2500,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "16 -> 17": {
+                "shiny_ore": 2600,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "17 -> 18": {
+                "shiny_ore": 2700,
+                "glowy_ore": 600,
+                "starry_ore": 0
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Dark Orb",
+        "id": 90000043,
+        "unlock": 8,
+        "superchargeable": false,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 18,
+            "count": 1,
+            "totalcosttill": null,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Metal Pants",
+        "id": 90000044,
+        "unlock": 10,
+        "superchargeable": false,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 18,
+            "count": 1,
+            "totalcosttill": null,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Noble Iron",
+        "id": 90000047,
+        "unlock": 12,
+        "superchargeable": false,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 18,
+            "count": 1,
+            "totalcosttill": null,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Action Figure",
+        "id": 90000048,
+        "unlock": 8,
+        "superchargeable": false,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 26,
+            "count": 1,
+            "totalcosttill": null,
+            "nextcost": {
+              "26 -> 27": {
+                "shiny_ore": 3600,
+                "glowy_ore": 600,
+                "starry_ore": 150
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Meteor Staff",
+        "id": 90000049,
+        "unlock": 8,
+        "superchargeable": false,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 1,
+            "count": 1,
+            "totalcosttill": 0,
+            "nextcost": {
+              "1 -> 2": {
+                "shiny_ore": 120,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "2 -> 3": {
+                "shiny_ore": 240,
+                "glowy_ore": 20,
+                "starry_ore": 0
+              },
+              "3 -> 4": {
+                "shiny_ore": 400,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "4 -> 5": {
+                "shiny_ore": 600,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "5 -> 6": {
+                "shiny_ore": 840,
+                "glowy_ore": 100,
+                "starry_ore": 0
+              },
+              "6 -> 7": {
+                "shiny_ore": 1120,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "7 -> 8": {
+                "shiny_ore": 1440,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "8 -> 9": {
+                "shiny_ore": 1800,
+                "glowy_ore": 200,
+                "starry_ore": 10
+              },
+              "9 -> 10": {
+                "shiny_ore": 1900,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "10 -> 11": {
+                "shiny_ore": 2000,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "11 -> 12": {
+                "shiny_ore": 2100,
+                "glowy_ore": 400,
+                "starry_ore": 20
+              },
+              "12 -> 13": {
+                "shiny_ore": 2200,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "13 -> 14": {
+                "shiny_ore": 2300,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "14 -> 15": {
+                "shiny_ore": 2400,
+                "glowy_ore": 600,
+                "starry_ore": 30
+              },
+              "15 -> 16": {
+                "shiny_ore": 2500,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "16 -> 17": {
+                "shiny_ore": 2600,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "17 -> 18": {
+                "shiny_ore": 2700,
+                "glowy_ore": 600,
+                "starry_ore": 50
+              },
+              "18 -> 19": {
+                "shiny_ore": 2800,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "19 -> 20": {
+                "shiny_ore": 2900,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "20 -> 21": {
+                "shiny_ore": 3000,
+                "glowy_ore": 600,
+                "starry_ore": 100
+              },
+              "21 -> 22": {
+                "shiny_ore": 3100,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "22 -> 23": {
+                "shiny_ore": 3200,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "23 -> 24": {
+                "shiny_ore": 3300,
+                "glowy_ore": 600,
+                "starry_ore": 120
+              },
+              "24 -> 25": {
+                "shiny_ore": 3400,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "25 -> 26": {
+                "shiny_ore": 3500,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "26 -> 27": {
+                "shiny_ore": 3600,
+                "glowy_ore": 600,
+                "starry_ore": 150
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Frost Flake",
+        "id": 90000050,
+        "unlock": 8,
+        "superchargeable": false,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 8,
+            "count": 1,
+            "totalcosttill": null,
+            "nextcost": {
+              "8 -> 9": {
+                "shiny_ore": 1800,
+                "glowy_ore": 200,
+                "starry_ore": 10
+              },
+              "9 -> 10": {
+                "shiny_ore": 1900,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "10 -> 11": {
+                "shiny_ore": 2000,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "11 -> 12": {
+                "shiny_ore": 2100,
+                "glowy_ore": 400,
+                "starry_ore": 20
+              },
+              "12 -> 13": {
+                "shiny_ore": 2200,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "13 -> 14": {
+                "shiny_ore": 2300,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "14 -> 15": {
+                "shiny_ore": 2400,
+                "glowy_ore": 600,
+                "starry_ore": 30
+              },
+              "15 -> 16": {
+                "shiny_ore": 2500,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "16 -> 17": {
+                "shiny_ore": 2600,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "17 -> 18": {
+                "shiny_ore": 2700,
+                "glowy_ore": 600,
+                "starry_ore": 50
+              },
+              "18 -> 19": {
+                "shiny_ore": 2800,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "19 -> 20": {
+                "shiny_ore": 2900,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "20 -> 21": {
+                "shiny_ore": 3000,
+                "glowy_ore": 600,
+                "starry_ore": 100
+              },
+              "21 -> 22": {
+                "shiny_ore": 3100,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "22 -> 23": {
+                "shiny_ore": 3200,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "23 -> 24": {
+                "shiny_ore": 3300,
+                "glowy_ore": 600,
+                "starry_ore": 120
+              },
+              "24 -> 25": {
+                "shiny_ore": 3400,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "25 -> 26": {
+                "shiny_ore": 3500,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "26 -> 27": {
+                "shiny_ore": 3600,
+                "glowy_ore": 600,
+                "starry_ore": 150
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "Stick Horse",
+        "id": 90000051,
+        "unlock": 8,
+        "superchargeable": false,
+        "upgrade_resource": "Gold",
+        "levels": [
+          {
+            "level": 1,
+            "count": 1,
+            "totalcosttill": 0,
+            "nextcost": {
+              "1 -> 2": {
+                "shiny_ore": 120,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "2 -> 3": {
+                "shiny_ore": 240,
+                "glowy_ore": 20,
+                "starry_ore": 0
+              },
+              "3 -> 4": {
+                "shiny_ore": 400,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "4 -> 5": {
+                "shiny_ore": 600,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "5 -> 6": {
+                "shiny_ore": 840,
+                "glowy_ore": 100,
+                "starry_ore": 0
+              },
+              "6 -> 7": {
+                "shiny_ore": 1120,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "7 -> 8": {
+                "shiny_ore": 1440,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "8 -> 9": {
+                "shiny_ore": 1800,
+                "glowy_ore": 200,
+                "starry_ore": 10
+              },
+              "9 -> 10": {
+                "shiny_ore": 1900,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "10 -> 11": {
+                "shiny_ore": 2000,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "11 -> 12": {
+                "shiny_ore": 2100,
+                "glowy_ore": 400,
+                "starry_ore": 20
+              },
+              "12 -> 13": {
+                "shiny_ore": 2200,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "13 -> 14": {
+                "shiny_ore": 2300,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "14 -> 15": {
+                "shiny_ore": 2400,
+                "glowy_ore": 600,
+                "starry_ore": 30
+              },
+              "15 -> 16": {
+                "shiny_ore": 2500,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "16 -> 17": {
+                "shiny_ore": 2600,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "17 -> 18": {
+                "shiny_ore": 2700,
+                "glowy_ore": 600,
+                "starry_ore": 50
+              },
+              "18 -> 19": {
+                "shiny_ore": 2800,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "19 -> 20": {
+                "shiny_ore": 2900,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "20 -> 21": {
+                "shiny_ore": 3000,
+                "glowy_ore": 600,
+                "starry_ore": 100
+              },
+              "21 -> 22": {
+                "shiny_ore": 3100,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "22 -> 23": {
+                "shiny_ore": 3200,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "23 -> 24": {
+                "shiny_ore": 3300,
+                "glowy_ore": 600,
+                "starry_ore": 120
+              },
+              "24 -> 25": {
+                "shiny_ore": 3400,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "25 -> 26": {
+                "shiny_ore": 3500,
+                "glowy_ore": 0,
+                "starry_ore": 0
+              },
+              "26 -> 27": {
+                "shiny_ore": 3600,
+                "glowy_ore": 600,
+                "starry_ore": 150
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "builderBase": {
+    "Wall": [
+      {
+        "name": "Wall",
+        "id": 1000033,
+        "unlock": 2,
+        "superchargeable": false,
+        "upgrade_resource": "Builder Gold",
+        "levels": [
+          {
+            "level": 7,
+            "count": 26,
+            "totalcosttill": 22152000,
+            "nextcost": {}
+          },
+          {
+            "level": 8,
+            "count": 147,
+            "totalcosttill": 213444000,
+            "nextcost": {}
+          },
+          {
+            "level": 9,
+            "count": 7,
+            "totalcosttill": 15764000,
+            "nextcost": {}
+          }
+        ]
+      }
+    ],
+    "Town Hall2": [
+      {
+        "name": "Builder Hall",
+        "id": 1000034,
+        "unlock": null,
+        "superchargeable": false,
+        "upgrade_resource": "Builder Gold",
+        "levels": [
+          {
+            "level": 10,
+            "count": 1,
+            "totalcosttill": 15033500,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "O.T.T.O's Outpost",
+        "id": 1000078,
+        "unlock": 6,
+        "superchargeable": false,
+        "upgrade_resource": "Builder Gold",
+        "levels": [
+          {
+            "level": 9,
+            "count": 1,
+            "totalcosttill": 19500000,
+            "nextcost": {}
+          }
+        ]
+      }
+    ],
+    "Resource": [
+      {
+        "name": "Elixir Collector",
+        "id": 1000035,
+        "unlock": 1,
+        "superchargeable": false,
+        "upgrade_resource": "Builder Gold",
+        "levels": [
+          {
+            "level": 9,
+            "count": 1,
+            "totalcosttill": 1106000,
+            "nextcost": {}
+          },
+          {
+            "level": 10,
+            "count": 2,
+            "totalcosttill": 3812000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Elixir Storage",
+        "id": 1000036,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Builder Gold",
+        "levels": [
+          {
+            "level": 9,
+            "count": 2,
+            "totalcosttill": 16400000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Gold Mine",
+        "id": 1000037,
+        "unlock": 1,
+        "superchargeable": false,
+        "upgrade_resource": "Builder Elixir",
+        "levels": [
+          {
+            "level": 9,
+            "count": 1,
+            "totalcosttill": 1106000,
+            "nextcost": {}
+          },
+          {
+            "level": 10,
+            "count": 2,
+            "totalcosttill": 3812000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Gold Storage",
+        "id": 1000038,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Builder Elixir",
+        "levels": [
+          {
+            "level": 9,
+            "count": 2,
+            "totalcosttill": 16400000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Clock Tower",
+        "id": 1000039,
+        "unlock": 4,
+        "superchargeable": false,
+        "upgrade_resource": "Builder Gold",
+        "levels": [
+          {
+            "level": 9,
+            "count": 1,
+            "totalcosttill": 9350000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Gem Mine",
+        "id": 1000058,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Builder Elixir",
+        "levels": [
+          {
+            "level": 9,
+            "count": 1,
+            "totalcosttill": 13990000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "B.O.B Control",
+        "id": 1000065,
+        "unlock": null,
+        "superchargeable": false,
+        "upgrade_resource": "Builder Gold",
+        "levels": [
+          {
+            "level": 5,
+            "count": 1,
+            "totalcosttill": 6600000,
+            "nextcost": {}
+          }
+        ]
+      }
+    ],
+    "Army": [
+      {
+        "name": "Builder Barracks",
+        "id": 1000040,
+        "unlock": 1,
+        "superchargeable": false,
+        "upgrade_resource": "Builder Elixir",
+        "levels": [
+          {
+            "level": 11,
+            "count": 1,
+            "totalcosttill": 5590000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Army Camp",
+        "id": 1000042,
+        "unlock": 0,
+        "superchargeable": false,
+        "upgrade_resource": "Builder Elixir",
+        "levels": [
+          {
+            "level": 1,
+            "count": 6,
+            "totalcosttill": 0,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Star Laboratory",
+        "id": 1000046,
+        "unlock": 1,
+        "superchargeable": false,
+        "upgrade_resource": "Builder Elixir",
+        "levels": [
+          {
+            "level": 10,
+            "count": 1,
+            "totalcosttill": 16066000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Reinforcement Camp",
+        "id": 1000049,
+        "unlock": 0,
+        "superchargeable": false,
+        "upgrade_resource": "Builder Elixir",
+        "levels": [
+          {
+            "level": 1,
+            "count": 2,
+            "totalcosttill": 0,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Guard Post",
+        "id": 1000051,
+        "unlock": 4,
+        "superchargeable": false,
+        "upgrade_resource": "Builder Gold",
+        "levels": [
+          {
+            "level": 9,
+            "count": 1,
+            "totalcosttill": 13040000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Battle Machine",
+        "id": 1000053,
+        "unlock": 0,
+        "superchargeable": false,
+        "upgrade_resource": "Builder Elixir",
+        "levels": [
+          {
+            "level": 1,
+            "count": 1,
+            "totalcosttill": 0,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Battle Copter",
+        "id": 1000080,
+        "unlock": 0,
+        "superchargeable": false,
+        "upgrade_resource": "Builder Elixir",
+        "levels": [
+          {
+            "level": 1,
+            "count": 1,
+            "totalcosttill": 0,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Healing Hut",
+        "id": 1000082,
+        "unlock": 6,
+        "superchargeable": false,
+        "upgrade_resource": "Builder Elixir",
+        "levels": [
+          {
+            "level": 5,
+            "count": 1,
+            "totalcosttill": 13250000,
+            "nextcost": {}
+          }
+        ]
+      }
+    ],
+    "Defense": [
+      {
+        "name": "Double Cannon",
+        "id": 1000041,
+        "unlock": 2,
+        "superchargeable": false,
+        "upgrade_resource": "Builder Gold",
+        "levels": [
+          {
+            "level": 9,
+            "count": 3,
+            "totalcosttill": 37050000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Hidden Tesla",
+        "id": 1000043,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Builder Gold",
+        "levels": [
+          {
+            "level": 9,
+            "count": 3,
+            "totalcosttill": 35640000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Cannon",
+        "id": 1000044,
+        "unlock": 1,
+        "superchargeable": false,
+        "upgrade_resource": "Builder Gold",
+        "levels": [
+          {
+            "level": 9,
+            "count": 3,
+            "totalcosttill": 28440000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Multi Mortar",
+        "id": 1000045,
+        "unlock": 5,
+        "superchargeable": false,
+        "upgrade_resource": "Builder Gold",
+        "levels": [
+          {
+            "level": 9,
+            "count": 1,
+            "totalcosttill": 16400000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Archer Tower",
+        "id": 1000048,
+        "unlock": 2,
+        "superchargeable": false,
+        "upgrade_resource": "Builder Gold",
+        "levels": [
+          {
+            "level": 9,
+            "count": 3,
+            "totalcosttill": 32256000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Firecrackers",
+        "id": 1000050,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Builder Gold",
+        "levels": [
+          {
+            "level": 9,
+            "count": 5,
+            "totalcosttill": 57700000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Mega Tesla",
+        "id": 1000052,
+        "unlock": 8,
+        "superchargeable": false,
+        "upgrade_resource": "Builder Gold",
+        "levels": [
+          {
+            "level": 9,
+            "count": 1,
+            "totalcosttill": 32200000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Air Bombs",
+        "id": 1000054,
+        "unlock": 4,
+        "superchargeable": false,
+        "upgrade_resource": "Builder Gold",
+        "levels": [
+          {
+            "level": 9,
+            "count": 1,
+            "totalcosttill": 14220000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Crusher",
+        "id": 1000055,
+        "unlock": 3,
+        "superchargeable": false,
+        "upgrade_resource": "Builder Gold",
+        "levels": [
+          {
+            "level": 9,
+            "count": 2,
+            "totalcosttill": 27540000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Roaster",
+        "id": 1000056,
+        "unlock": 6,
+        "superchargeable": false,
+        "upgrade_resource": "Builder Gold",
+        "levels": [
+          {
+            "level": 9,
+            "count": 1,
+            "totalcosttill": 19200000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Giant Cannon",
+        "id": 1000057,
+        "unlock": 7,
+        "superchargeable": false,
+        "upgrade_resource": "Builder Gold",
+        "levels": [
+          {
+            "level": 9,
+            "count": 1,
+            "totalcosttill": 24700000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Lava Launcher",
+        "id": 1000063,
+        "unlock": 9,
+        "superchargeable": false,
+        "upgrade_resource": "Builder Gold",
+        "levels": [
+          {
+            "level": 9,
+            "count": 1,
+            "totalcosttill": 34200000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "X-Bow",
+        "id": 1000081,
+        "unlock": 10,
+        "superchargeable": false,
+        "upgrade_resource": "Builder Gold",
+        "levels": [
+          {
+            "level": 2,
+            "count": 1,
+            "totalcosttill": 9200000,
+            "nextcost": {}
+          }
+        ]
+      }
+    ],
+    "Worker2": [],
+    "Hero": [
+      {
+        "name": "Battle Machine",
+        "id": 28000003,
+        "unlock": 5,
+        "superchargeable": false,
+        "upgrade_resource": "Builder Elixir",
+        "levels": [
+          {
+            "level": 30,
+            "count": 1,
+            "totalcosttill": 74100000,
+            "nextcost": {}
+          }
+        ]
+      },
+      {
+        "name": "Battle Copter",
+        "id": 28000005,
+        "unlock": 0,
+        "superchargeable": false,
+        "upgrade_resource": "Builder Elixir",
+        "levels": [
+          {
+            "level": 30,
+            "count": 1,
+            "totalcosttill": 49500000,
+            "nextcost": {}
+          }
+        ]
+      }
+    ],
+    "Troops": [
+      {
+        "name": "Baby Dragon",
+        "id": 4000041,
+        "unlock": 0,
+        "superchargeable": false,
+        "upgrade_resource": "Builder Elixir",
+        "levels": [
+          {
+            "level": 19,
+            "count": 1,
+            "totalcosttill": 31840000,
+            "nextcost": {}
+          }
+        ]
+      }
+    ]
+  }
+}

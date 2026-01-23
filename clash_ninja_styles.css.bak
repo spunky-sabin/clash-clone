@@ -1,0 +1,1935 @@
+/* ==========================================
+   CLASH NINJA THEME - REDESIGN 2026
+   ========================================== */
+
+:root {
+    /* Main Backgrounds */
+    --bg-app: #0b1829;
+    --bg-header: #0b1829;
+    /* Seamless */
+    --bg-panel: #11223a;
+    /* Slightly lighter for panels */
+    --bg-card: #152238;
+    /* Cards/Boxes */
+    --bg-darker: #060e18;
+
+    /* Text Colors */
+    --text-primary: #ffffff;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
+    --text-gold: #fbbf24;
+    --text-blue: #60a5fa;
+    --text-alert: #ef4444;
+
+    /* Brand Colors */
+    --accent-blue: #3b82f6;
+    /* Buttons */
+    --accent-green: #22c55e;
+    --accent-yellow: #eab308;
+
+    /* Progress Bar Stripes */
+    --stripe-color: rgba(255, 255, 255, 0.15);
+
+    /* Borders */
+    --border-subtle: #1e3a5f;
+    --border-light: #2d4a77;
+
+    /* Resource Colors */
+    /* Dark Elixir */
+    --res-dark: #371131;
+    /* Gold */
+    --res-gold: #fde047;
+
+    /* Dimensions */
+    --max-width: 1300px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #050a12;
+    color: var(--text-primary);
+    min-height: 100vh;
+}
+
+.app-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.app-inner-container {
+    background-color: var(--bg-app);
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--border-subtle);
+}
+
+/* ==========================================
+   1. HEADER
+   ========================================== */
+.main-header {
+    padding: 1rem 0;
+    margin-bottom: 0;
+    /* Tight spacing */
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+.player-identity {
+    text-align: center;
+}
+
+.village-name {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #4a9eff;
+    /* Specific blue from image */
+    margin-bottom: 0.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    justify-content: center;
+}
+
+.share-icon {
+    font-size: 1.2rem;
+    color: var(--accent-yellow);
+    cursor: pointer;
+}
+
+.player-tag-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.player-tag {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #5d7599;
+    /* Greyish blue */
+}
+
+.external-link {
+    color: #5d7599;
+    font-size: 1rem;
+}
+
+.header-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border-subtle), transparent);
+    width: 100%;
+}
+
+/* ==========================================
+   2. VILLAGE OVERVIEW PANEL
+   ========================================== */
+.village-overview-panel {
+    background: transparent;
+    /* Seamless */
+    padding: 1rem;
+}
+
+.overview-content {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* Updated for specific layout: Left side image, Right side stats, Far right builders */
+.th-section {
+    flex: 0 0 auto;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+}
+
+.th-image {
+    width: 180px;
+    height: auto;
+    filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
+}
+
+.stats-section {
+    flex: 1;
+    min-width: 300px;
+    max-width: 450px;
+}
+
+.stats-header {
+    margin-bottom: 1rem;
+}
+
+.th-title {
+    font-size: 1.2rem;
+    color: #3b82f6;
+    /* Blue again */
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.stats-meta {
+    font-size: 0.9rem;
+    color: #cbd5e1;
+    display: flex;
+    gap: 1rem;
+}
+
+.stat-day {
+    font-weight: 700;
+}
+
+.stat-day span {
+    color: #fff;
+}
+
+.stat-completion i {
+    font-size: 0.8rem;
+    color: #60a5fa;
+}
+
+/* Compact Progress List */
+.compact-progress-list {
+    margin-bottom: 1rem;
+}
+
+.progress-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+    /* Tight vertical spacing */
+    height: 18px;
+    /* Fixed height for consistency */
+}
+
+.progress-info {
+    width: 110px;
+    /* Fixed label width */
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+}
+
+.p-label {
+    font-size: 0.8rem;
+    color: #94a3b8;
+    font-weight: 600;
+}
+
+.progress-track {
+    flex: 1;
+    height: 100%;
+    background: #1e293b;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+    margin-left: 0.5rem;
+}
+
+/* Striped Blue Fill */
+.progress-fill.stripe-blue {
+    background: #3b82f6;
+    background-image: repeating-linear-gradient(45deg,
+            transparent,
+            transparent 10px,
+            rgba(255, 255, 255, 0.15) 10px,
+            rgba(255, 255, 255, 0.15) 20px);
+    height: 100%;
+    border-radius: 3px;
+    transition: width 0.5s ease;
+}
+
+.p-value-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+    z-index: 2;
+    white-space: nowrap;
+}
+
+/* Action Buttons */
+.overview-actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.btn-api,
+.btn-upload {
+    border: none;
+    border-radius: 4px;
+    padding: 0.4rem 1rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.btn-api {
+    background: #3b82f6;
+}
+
+.btn-upload {
+    background: #84cc16;
+}
+
+.bob-switch-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.bob-status {
+    background: #65a30d;
+    /* Greenish/Olive */
+    display: flex;
+    align-items: center;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    gap: 0.5rem;
+}
+
+.bob-status i {
+    color: #fff;
+}
+
+.bob-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.bob-title {
+    font-size: 0.65rem;
+    color: #dcfce7;
+    font-weight: 700;
+}
+
+.bob-val {
+    font-size: 0.8rem;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.btn-switch {
+    background: #475569;
+    border: 1px solid #64748b;
+    color: #e2e8f0;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.85rem;
+    flex: 1;
+    /* Match width */
+    max-width: 200px;
+}
+
+/* ==========================================
+   BUILDER BREAKDOWN SECTION
+   ========================================== */
+.builder-breakdown-section {
+    background: var(--bg-panel);
+    border-radius: 8px;
+    padding: 1rem;
+    border: 1px solid var(--border-subtle);
+    min-width: 280px;
+}
+
+.builder-section-title {
+    color: var(--text-primary);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.builder-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.builder-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    border: 1px solid var(--border-subtle);
+}
+
+.builder-row.working {
+    border-color: var(--accent-yellow);
+    background: rgba(234, 179, 8, 0.1);
+}
+
+.builder-icon {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+.builder-icon img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.builder-icon.goblin {
+    background: rgba(139, 69, 19, 0.3);
+}
+
+.builder-fallback {
+    font-size: 1.2rem;
+}
+
+.builder-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.builder-name {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.builder-name.goblin-name {
+    color: #f59e0b;
+}
+
+.builder-status {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.builder-status.idle .idle-text {
+    font-size: 0.75rem;
+    color: #64748b;
+    font-style: italic;
+}
+
+/* Builder Working State */
+.builder-work-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.builder-work-name {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.builder-progress-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.builder-progress-bar {
+    flex: 1;
+    height: 6px;
+    background: #1e293b;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.builder-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #22c55e, #84cc16);
+    border-radius: 3px;
+    transition: width 0.3s ease;
+}
+
+.builder-time {
+    font-size: 0.7rem;
+    color: var(--text-secondary);
+    min-width: 50px;
+    text-align: right;
+}
+
+.builder-gem-cost {
+    font-size: 0.7rem;
+    color: #22c55e;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.builder-gem-icon {
+    font-size: 0.65rem;
+}
+
+/* Goblin Builder specific */
+.goblin-builder {
+    border-color: #f59e0b;
+    background: rgba(245, 158, 11, 0.1);
+}
+
+/* ==========================================
+   3. DASHBOARD STATUS BAR
+   ========================================== */
+.dashboard-status-bar {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1px;
+    /* Divider look */
+    background: #1e3a5f;
+    /* Border color acting as gap color */
+    border: 1px solid #1e3a5f;
+    margin: 0 1rem 1rem 1rem;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.status-box {
+    background: #0f172a;
+    /* Dark background */
+    padding: 0.75rem 0.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.status-label {
+    font-size: 0.8rem;
+    color: #94a3b8;
+}
+
+.status-label strong {
+    color: white;
+}
+
+.status-btn {
+    background: #3b82f6;
+    border: none;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 0.2rem 0.6rem;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 60px;
+    /* Small fixed width */
+}
+
+.btn-group {
+    display: flex;
+    gap: 2px;
+}
+
+.status-btn-icon {
+    background: #f59e0b;
+    border: none;
+    color: black;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+/* ==========================================
+   4. LEGEND & FOOTER
+   ========================================== */
+.legend-footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    color: #94a3b8;
+}
+
+.legend-keys {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.legend-label {
+    font-weight: 700;
+    color: white;
+}
+
+.key-item {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.box-green {
+    width: 12px;
+    height: 12px;
+    background: #84cc16;
+}
+
+.box-yellow {
+    width: 12px;
+    height: 12px;
+    background: #fbbf24;
+}
+
+.box-grey {
+    width: 12px;
+    height: 12px;
+    background: #94a3b8;
+}
+
+.footer-actions {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-link {
+    color: #ef4444;
+    /* Red notification color from img */
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.footer-link:first-child {
+    color: #f59e0b;
+}
+
+/* Share is Orange/Yellow */
+
+
+/* ==========================================
+   5. NAVIGATION TABS
+   ========================================== */
+.category-nav-bar {
+    margin: 0 1rem 0 1rem;
+    border-bottom: 2px solid #3b82f6;
+    /* Blue line at bottom */
+    position: relative;
+    background: #e2e8f0;
+    /* Light grey bar background shown in image? No, looks like buttons */
+    background: transparent;
+}
+
+.nav-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 1px;
+    /* Gap between tabs */
+    background: #94a3b8;
+    /* Border line color between tabs */
+    padding-bottom: 1px;
+    /* Bottom border */
+}
+
+.nav-tab {
+    background: #cbd5e1;
+    /* Default greyish tab */
+    border: none;
+    padding: 0.5rem 0.75rem;
+    min-width: 80px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    font-size: 0.8rem;
+    color: #475569;
+    font-weight: 600;
+}
+
+.nav-tab.active {
+    background: #fbbf24;
+    /* Active Yellow */
+    color: #000;
+}
+
+.nav-tab.alert {
+    background: #fbbf24;
+    /* Alert Yellow (same as active?) Or slightly different? Image shows Resources(1) yellow */
+    color: #000;
+}
+
+.tab-count {
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.loading-bar-container {
+    height: 4px;
+    background: #1e293b;
+    position: relative;
+    top: -2px;
+    /* Pull up to cover bottom border */
+}
+
+.loading-bar {
+    height: 100%;
+    background: #3b82f6;
+}
+
+/* ==========================================
+   6. MAIN GRID LAYOUT
+   ========================================== */
+.main-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    /* Main content vs 320px sidebar */
+    gap: 1.5rem;
+    padding: 1.5rem 1rem;
+}
+
+/* LEFT COLUMN - UPGRADE LIST */
+.upgrade-list-column {
+    /* Styles for the table container */
+}
+
+.list-header-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.section-heading {
+    font-size: 1.5rem;
+    color: #60a5fa;
+    /* Light blue */
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.list-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.btn-tool {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: 1px solid #475569;
+    background: #334155;
+    color: #f1f5f9;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-loot-planner {
+    background: #65a30d;
+    border-color: #65a30d;
+}
+
+/* Green */
+.btn-edit-levels {
+    background: #3b82f6;
+    border-color: #3b82f6;
+}
+
+/* Blue */
+
+/* Boosts Banner */
+.boosts-banner {
+    background: #bfdbfe;
+    /* Light blueish white */
+    color: #1e3a5f;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.boost-title {
+    font-weight: 800;
+    color: #3b82f6;
+}
+
+.boosts-banner a {
+    font-weight: 700;
+    color: #1e1e1e;
+    text-decoration: underline;
+}
+
+/* Filter Row */
+.filter-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.filter-info {
+    color: #eab308;
+    /* Yellow text */
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+
+/* Upgrade Section Tables (Reusing/Refining old styles) */
+.upgrade-section {
+    border: 1px solid #1e3a5f;
+    border-radius: 4px;
+    /* Sharp corners */
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.section-header {
+    background: #3b82f6;
+    /* Header Blue */
+    padding: 0.5rem 1rem;
+}
+
+.section-title {
+    color: white;
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Main Table Selector - Using ID for Specificity */
+#defenseTable {
+    width: 100%;
+    border-collapse: collapse;
+    background: #0f172a;
+    border: 2px solid #ffffff;
+    /* Thick white outer border */
+}
+
+#defenseTable thead th {
+    background: #3b82f6;
+    /* Blue header to match screenshot */
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    border: 1px solid #ffffff;
+    /* White border for header cells */
+}
+
+#defenseTable thead th:first-child {
+    text-align: center;
+}
+
+/* Defense Header */
+
+#defenseTable tr {
+    /* Borders handled by cells */
+}
+
+#defenseTable td {
+    /* White border for all cells */
+    vertical-align: middle;
+}
+
+#defenseTable tr.group-last-row td,
+#defenseTable td.group-defense-cell {
+    border-bottom: 1px solid #ffffff;
+    /* Revert to standard border */
+}
+
+/* Defense Header Row Removed - Rule can be deprecated or kept as fallback */
+#defenseTable tr.defense-header-row td {
+    border-top: 1px solid #ffffff;
+}
+
+/* Entity Cell Styling */
+.entity-cell {
+    padding: 1rem;
+    width: 160px;
+    /* Fixed width sidebar in table */
+    text-align: center;
+    vertical-align: top;
+    border-right: 1px solid #1e293b;
+}
+
+.entity-icon-wrapper img {
+    width: 80px;
+    height: auto;
+}
+
+.entity-name {
+    font-weight: 700;
+    color: #fff;
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+}
+
+.upgrade-details-block {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+/* Upgrades List Row (Compact) */
+.level-row {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    background: #1e293b;
+    /* Darker row strip */
+    margin-bottom: 2px;
+    border-radius: 2px;
+}
+
+/* Alternate bg logic? CSS :nth-child can do it */
+.active-upgrade-container {
+    /* Style for active progress bar inside table */
+    padding: 0.5rem;
+}
+
+.active-progress-bar {
+    height: 12px;
+    background: #eab308;
+    /* Yellow for upgrading? */
+    border-radius: 6px;
+    text-align: center;
+    font-size: 0.65rem;
+    color: black;
+    line-height: 12px;
+}
+
+/* RIGHT COLUMN - SIDEBAR */
+.sidebar-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.sidebar-heading {
+    color: #60a5fa;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.sidebar-card {
+    background: transparent;
+    /* No bg? Or border only? Image shows table-like structure inside a container */
+    border: 1px solid #3b82f6;
+    /* Blue border */
+    border-radius: 4px;
+    background: #1e293b;
+    /* Inner dark */
+    overflow: hidden;
+}
+
+.card-row {
+    background: #1e293b;
+    padding: 0.75rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #334155;
+    font-size: 0.9rem;
+}
+
+.card-row:last-child {
+    border-bottom: none;
+}
+
+.header-row {
+    background: #60a5fa;
+    /* Header Blue */
+    color: #000;
+    /* Text is black in header? Or white? Image shows 'Resource' 'Total' white on Blue */
+    background: #3b82f6;
+    color: white;
+    font-weight: 700;
+    text-transform: none;
+}
+
+.res-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #e2e8f0;
+}
+
+.res-icon-sm {
+    width: 22px;
+    height: 22px;
+}
+
+.res-val {
+    font-weight: 700;
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+.res-val.text-gold {
+    color: #facc15;
+}
+
+.res-val.text-blue {
+    color: #60a5fa;
+}
+
+.time-row {
+    align-items: flex-start;
+}
+
+.time-val-group {
+    text-align: right;
+    font-size: 0.8rem;
+    color: #cbd5e1;
+}
+
+.time-val-group strong {
+    display: block;
+    color: white;
+    font-size: 0.9rem;
+    margin-top: 2px;
+}
+
+/* ==========================================
+   SUPERCHARGE STYLES
+   ========================================== */
+.supercharge-bolts {
+    display: flex;
+    justify-content: center;
+    margin-top: 4px;
+}
+
+.bolt-pulse {
+    animation: bolt-pulse-animation 1.5s infinite;
+}
+
+@keyframes bolt-pulse-animation {
+    0% {
+        opacity: 0.4;
+        transform: scale(0.9);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
+    100% {
+        opacity: 0.4;
+        transform: scale(0.9);
+    }
+}
+
+.sc-level-row {
+    background: rgba(59, 130, 246, 0.05);
+    border-left: 2px solid #3b82f6;
+    padding-left: 6px !important;
+}
+
+.supercharge-status-text {
+    font-size: 0.85rem;
+    margin-top: 4px;
+}
+
+/* Support Box */
+.support-box {
+    background: #bfdbfe;
+    /* Light blue box */
+    padding: 1rem;
+    border-radius: 4px;
+    color: #1e3a5f;
+    text-align: center;
+}
+
+.support-box h4 {
+    font-size: 0.95rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.support-box p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+.btn-creator {
+    background: #60a5fa;
+    color: white;
+    /* black? Image shows grey button 'Use Code: Ninja' */
+    background: #94a3b8;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-creator i {
+    color: #fff;
+}
+
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    background: #1e293b;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 600px;
+    max-width: 90%;
+    border: 1px solid #334155;
+}
+
+.modal-title {
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.modal-close {
+    float: right;
+    background: none;
+    border: none;
+    color: #94a3b8;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.json-textarea {
+    width: 100%;
+    height: 200px;
+    background: #0f172a;
+    border: 1px solid #334155;
+    color: #e2e8f0;
+    padding: 1rem;
+    font-family: monospace;
+    margin-bottom: 1rem;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.btn-primary {
+    background: #3b82f6;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background: #475569;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .main-content-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ==========================================
+   LANDING PAGE
+   ========================================== */
+.landing-page-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #0b1829 0%, #1e3a5f 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.landing-content {
+    text-align: center;
+    max-width: 600px;
+    padding: 2rem;
+    background: rgba(11, 24, 41, 0.95);
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.landing-title {
+    color: #4a9eff;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+}
+
+.landing-subtitle {
+    color: #cbd5e1;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.landing-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.btn-large {
+    padding: 1rem;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    font-weight: 700;
+    transition: transform 0.2s ease;
+}
+
+.btn-large:hover {
+    transform: translateY(-2px);
+}
+
+/* ==========================================
+   UPDATED NAV TAB STATES
+   ========================================== */
+.nav-tab {
+    position: relative;
+    background: #cbd5e1;
+    color: #475569;
+}
+
+.nav-tab.tab-maxed {
+    background: #86efac;
+    color: #14532d;
+}
+
+.nav-tab.active {
+    background: #3b82f6;
+    color: white;
+}
+
+.nav-tab.tab-upgrading {
+    background: #fcd34d !important;
+    color: #78350f !important;
+}
+
+.nav-tab.tab-upgrading.active {
+    background: #fcd34d !important;
+    border-bottom: 3px solid #3b82f6;
+}
+
+/* B.O.B Styles */
+.bob-status.locked {
+    background: #ef4444;
+}
+
+.bob-val.locked {
+    color: #fee2e2;
+}
+
+/* ==========================================
+   TABLEVIEW STYLES (from tracker.html)
+   ========================================== */
+
+/* Stats Bar */
+.stats-bar {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 1rem;
+}
+
+.stat-card {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: 1px solid var(--border-subtle);
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.stat-card span {
+    font-weight: bold;
+    color: white;
+    margin-left: 5px;
+}
+
+.stat-card.stat-maxed span {
+    color: #34d399;
+}
+
+.stat-card.stat-upg span {
+    color: #60a5fa;
+}
+
+/* Defense Table Layout */
+.defense-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--bg-panel);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.defense-table thead {
+    background: #151922;
+}
+
+.defense-table th {
+    padding: 10px 12px;
+    text-align: left;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    border-bottom: 2px solid var(--border-subtle);
+}
+
+/* Group Header Logic */
+.defense-group-header {
+    background: #3c527c;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 12px !important;
+    text-transform: capitalize;
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.defense-group-summary {
+    background: #334469;
+    color: var(--text-muted);
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 6px !important;
+    border-bottom: 2px solid var(--border-subtle);
+}
+
+.group-summary-cost {
+    color: #e879f9;
+    /* Vibrant purple/magenta for costs */
+    font-weight: 700;
+}
+
+.defense-row td {
+    padding: 8px 10px;
+    vertical-align: middle;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Level Content Layout */
+.level-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.status-icon-wrapper {
+    margin-top: 4px;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-weight: 800;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.status-icon-arrow {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.status-icon-bolt {
+    background: rgba(59, 130, 246, 0.2);
+    color: #3b82f6;
+}
+
+/* Upgrade Entry Layout */
+.upgrade-entry {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 4px;
+}
+
+.upgrade-entry-cost {
+    color: #e879f9;
+    /* Vibrant purple */
+    font-weight: 600;
+}
+
+.upgrade-entry-time {
+    color: #94a3b8;
+    /* Muted grey */
+}
+
+.defense-row:hover {
+    background: #2c3345;
+}
+
+.defense-name-cell {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.defense-img {
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    border: 1px solid var(--border-subtle);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6rem;
+    color: var(--text-muted);
+    flex-shrink: 0;
+}
+
+.defense-name {
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: var(--text-primary);
+}
+
+.defense-parent-level {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #facc15;
+    background: rgba(250, 204, 21, 0.15);
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+.level-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.level-img {
+    width: 30px;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    border: 1px solid var(--border-subtle);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.5rem;
+    color: var(--text-muted);
+    flex-shrink: 0;
+}
+
+.level-text {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.supercharge {
+    font-size: 0.9rem;
+    line-height: 1;
+}
+
+.upgrade-btn {
+    background: var(--accent-blue);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    width: 24px;
+    height: 24px;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.fully-upgraded-icon {
+    color: #34d399;
+    font-size: 1.1rem;
+}
+
+.fully-upgraded-text {
+    color: #34d399;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+.upgrade-detail {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.upgrade-lvl {
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+}
+
+.upgrade-cost {
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.upgrade-cost.gold {
+    color: #ffd700;
+}
+
+.upgrade-cost.elixir {
+    color: #ff00ff;
+}
+
+.upgrade-cost.dark {
+    color: #a1a1aa;
+}
+
+.upgrade-time {
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+}
+
+/* Equipment Table */
+.hero-header {
+    background-color: #1a2744;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #2e4a85;
+}
+
+.eq-row td {
+    background-color: #1e2535;
+    border: 1px solid #2e4a85;
+    padding: 10px;
+    vertical-align: top;
+    color: #ddd;
+}
+
+.eq-icon-large {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 5px auto;
+}
+
+.eq-name {
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.eq-level-cell {
+    text-align: center;
+}
+
+.eq-level-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.eq-small-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.eq-tags {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.tag {
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: black;
+    text-transform: capitalize;
+}
+
+.tag-active {
+    background-color: #8ce64a;
+    color: #000;
+}
+
+.tag-passive {
+    background-color: #ddd;
+    color: #000;
+}
+
+.tag-common {
+    background-color: #4da6ff;
+    color: #000;
+}
+
+.tag-epic {
+    background-color: #b34dff;
+    color: #fff;
+}
+
+.upgrade-btn-small {
+    background: linear-gradient(#4a90e2, #0056b3);
+    border: 1px solid #004494;
+    border-radius: 4px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.status-check {
+    color: #4ce64a;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.upgrade-list {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.upgrade-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+    border-bottom: 1px solid #2e3a55;
+    padding-bottom: 2px;
+}
+
+.summary-bar {
+    background-color: #2e3a55;
+    padding: 5px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 0.85rem;
+    color: #aaa;
+}
+
+/* Ore Colors */
+.ore-cost {
+    display: inline-flex;
+    gap: 8px;
+}
+
+.ore-val {
+    font-weight: bold;
+}
+
+.c-shiny {
+    color: #4da6ff;
+}
+
+.c-glowy {
+    color: #ff66cc;
+}
+
+.c-starry {
+    color: #ffbf00;
+}
+
+/* Resource Icons */
+.res-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    margin-right: 6px;
+    vertical-align: text-bottom;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.res-Gold {
+    background: linear-gradient(135deg, #ffd700, #b8860b);
+    box-shadow: 0 0 5px rgba(255, 215, 0, 0.4);
+}
+
+.res-Elixir {
+    background: linear-gradient(135deg, #ff00ff, #800080);
+    box-shadow: 0 0 5px rgba(255, 0, 255, 0.4);
+}
+
+.res-Dark {
+    background: linear-gradient(135deg, #2d3436, #000);
+    border: 1px solid #4a4a4a;
+}
+
+.res-Ores {
+    background: linear-gradient(135deg, #00d2d3, #2e86de);
+}
+
+/* Data Warning Banner */
+.data-warning-banner {
+    background: rgba(239, 68, 68, 0.2);
+    border: 1px solid #ef4444;
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.warning-content {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #fca5a5;
+}
+
+.warning-content i {
+    color: #ef4444;
+}
+
+/* ==========================================
+   UPGRADE PROGRESS DISPLAY
+   ========================================== */
+
+/* Detailed upgrading info container */
+.upgrading-detailed {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Progress bar header */
+.upgrading-header {
+    position: relative;
+    height: 20px;
+    background: #1e293b;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 0.25rem;
+}
+
+.upgrading-progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #22c55e, #84cc16);
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+.upgrading-progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+/* Current upgrade row */
+.upgrading-current {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.25rem 0;
+    font-size: 0.85rem;
+}
+
+.upgrading-arrow {
+    color: #22c55e;
+    font-weight: bold;
+}
+
+.upgrading-to {
+    color: #fff;
+    font-weight: 600;
+}
+
+.upgrading-time {
+    color: #94a3b8;
+}
+
+.gem-cost {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    color: #22c55e;
+    font-weight: 600;
+    margin-left: auto;
+}
+
+.gem-icon {
+    font-size: 0.9rem;
+}
+
+/* Remaining upgrades list */
+.remaining-upgrades {
+    border-top: 1px solid #334155;
+    padding-top: 0.5rem;
+    margin-top: 0.25rem;
+}
+
+.remaining-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.2rem 0;
+    font-size: 0.8rem;
+}
+
+.remaining-lvl {
+    color: #94a3b8;
+    min-width: 50px;
+}
+
+.remaining-cost {
+    font-weight: 600;
+    min-width: 50px;
+}
+
+.remaining-cost.gold {
+    color: #fde047;
+}
+
+.remaining-cost.elixir {
+    color: #e879f9;
+}
+
+.remaining-cost.dark {
+    color: #a78bfa;
+}
+
+.remaining-time {
+    color: #64748b;
+    margin-left: auto;
+}
+
+/* Totals row */
+.remaining-total {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 0;
+    margin-top: 0.25rem;
+    border-top: 1px dashed #475569;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #60a5fa;
+}
+
+/* Upgrade List Additions */
+.upgrade-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.th-maxed-note {
+    font-size: 0.8rem;
+    color: #94a3b8;
+    font-style: italic;
+    margin-top: 4px;
+}
+
+.fully-upgraded-text.th-limit {
+    color: #eab308;
+    line-height: 1.2;
+}
+
+.th-max-note {
+    font-size: 0.75rem;
+    color: #eab308;
+    margin-top: 2px;
+}

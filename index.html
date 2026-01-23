@@ -4,202 +4,723 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clash Progress Tracker</title>
+    <title>Clash Progress Tracker - Upload Village Data</title>
     <link rel="stylesheet" href="clash_ninja_styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #0a1628 0%, #1a2942 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .upload-card {
+            background: rgba(26, 41, 66, 0.9);
+            border: 2px solid rgba(74, 158, 255, 0.3);
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+        }
+
+        h1 {
+            color: #4a9eff;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            text-align: left;
+        }
+
+        .subtitle {
+            color: #b8c5d6;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .instructions {
+            background: rgba(15, 25, 40, 0.6);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .instructions ol {
+            margin-left: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .instructions li {
+            margin-bottom: 0.75rem;
+            color: #d4dce6;
+        }
+
+        .instructions strong {
+            color: #4a9eff;
+        }
+
+        .screenshot {
+            width: 100%;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            border: 2px solid rgba(74, 158, 255, 0.2);
+        }
+
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            text-decoration: none;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #4a9eff 0%, #3a8eef 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(74, 158, 255, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(74, 158, 255, 0.6);
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, #f87171 0%, #dc2626 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(248, 113, 113, 0.4);
+        }
+
+        .btn-secondary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(248, 113, 113, 0.6);
+        }
+
+        .btn-success {
+            background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(74, 222, 128, 0.4);
+        }
+
+        .btn-success:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(74, 222, 128, 0.6);
+        }
+
+        .info-box {
+            background: rgba(74, 158, 255, 0.1);
+            border-left: 4px solid #4a9eff;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 1.5rem;
+        }
+
+        .info-box p {
+            color: #b8c5d6;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .info-box a {
+            color: #4a9eff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .info-box a:hover {
+            text-decoration: underline;
+        }
+
+        /* Paste Input Styles */
+        .paste-input {
+            width: 100%;
+            min-height: 120px;
+            background: rgba(15, 25, 40, 0.8);
+            border: 1px solid rgba(74, 158, 255, 0.3);
+            border-radius: 8px;
+            padding: 1rem;
+            color: #ffffff;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            resize: vertical;
+        }
+
+        .paste-input:focus {
+            outline: none;
+            border-color: #4a9eff;
+        }
+
+        /* Status Message Styles */
+        .status-message {
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        .status-error {
+            background: rgba(248, 113, 113, 0.2);
+            border-left: 4px solid #f87171;
+            color: #fca5a5;
+        }
+
+        .status-success {
+            background: rgba(74, 222, 128, 0.2);
+            border-left: 4px solid #4ade80;
+            color: #86efac;
+        }
+
+        .status-info {
+            background: rgba(74, 158, 255, 0.2);
+            border-left: 4px solid #4a9eff;
+            color: #93c5fd;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .btn {
+                padding: 0.875rem 1.5rem;
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container">
-        <!-- Village Overview Panel -->
-        <section class="village-overview">
-            <div class="village-header">
-                <div class="village-name-tag">
-                    <div class="village-name">
-                        <span id="villageName">Black Devil</span>
-                        <i class="fas fa-share-alt share-icon" title="Share"></i>
-                    </div>
-                    <div class="player-tag">
-                        <span id="playerTag">#LJYG9VPQY</span>
-                        <a href="#" class="external-link" id="playerLink"><i class="fa-solid fa-external-link"></i></a>
-                    </div>
-                </div>
+    <!-- Landing Page (Initially Visible) -->
+    <div id="landing-page" class="landing-page-container">
+        <div class="landing-content">
+            <h1 class="landing-title">Clash Progress Tracker</h1>
+            <p class="landing-subtitle">Track your upgrades, plan your builder schedule, and optimize your village.</p>
 
-                <div class="th-display">
-                    <div class="th-image-container">
-                        <img id="thImage" src="/images/entities/1_18.png" alt="Town Hall" class="th-image">
-                    </div>
-                    <div class="th-level-badge" id="thBadge">Town Hall 18</div>
-                </div>
-
-                <div class="upload-btn" id="debugBtn" style="background:#fb923c; margin-right: 1rem;">
-                    <i class="fas fa-bug"></i>
-                    <span>Debug</span>
-                </div>
-                <div class="upload-btn" id="statsBtn" style="background:var(--accent-blue); margin-right: 1rem;">
-                    <i class="fas fa-chart-bar"></i>
-                    <span>Stats</span>
-                </div>
-                <div class="upload-btn" id="uploadBtn">
-                    <i class="fas fa-upload"></i>
-                    <span>Upload</span>
-                </div>
+            <div class="landing-actions">
+                <button id="landingUploadBtn" class="btn-large btn-primary">
+                    <i class="fas fa-upload"></i> Upload User Data
+                </button>
             </div>
-
-            <div class="village-stats">
-                <div class="stat-badge">
-                    <i class="far fa-clock"></i>
-                    <span>Day: <span id="dayCount">23</span></span>
-                </div>
-                <div class="stat-badge">
-                    <i class="fa-solid fa-check"></i>
-                    <span>API Info Valid</span>
-                </div>
-            </div>
-
-            <!-- Progress Overview -->
-            <div class="progress-overview">
-                <div class="progress-item">
-                    <div class="progress-header">
-                        <span class="progress-label">Structures</span>
-                        <span class="progress-percent" id="percent-structures">--%</span>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress-fill structures" id="fill-structures"></div>
-                    </div>
-                </div>
-
-                <div class="progress-item">
-                    <div class="progress-header">
-                        <span class="progress-label">Supercharge</span>
-                        <span class="progress-percent" id="percent-supercharge">--%</span>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress-fill supercharge" id="fill-supercharge"></div>
-                    </div>
-                </div>
-
-                <div class="progress-item">
-                    <div class="progress-header">
-                        <span class="progress-label">Crafted Def.</span>
-                        <span class="progress-percent" id="percent-crafted">--%</span>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress-fill crafted" id="fill-crafted"></div>
-                    </div>
-                </div>
-
-                <div class="progress-item">
-                    <div class="progress-header">
-                        <span class="progress-label">Lab</span>
-                        <span class="progress-percent" id="percent-lab">--%</span>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress-fill lab" id="fill-lab"></div>
-                    </div>
-                </div>
-
-                <div class="progress-item">
-                    <div class="progress-header">
-                        <span class="progress-label">Heroes</span>
-                        <span class="progress-percent" id="percent-heroes">--%</span>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress-fill heroes" id="fill-heroes"></div>
-                    </div>
-                </div>
-
-                <div class="progress-item">
-                    <div class="progress-header">
-                        <span class="progress-label">Equipment</span>
-                        <span class="progress-percent" id="percent-equipment">--%</span>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress-fill equipment" id="fill-equipment"></div>
-                    </div>
-                </div>
-
-                <div class="progress-item">
-                    <div class="progress-header">
-                        <span class="progress-label">Pets</span>
-                        <span class="progress-percent" id="percent-pets">--%</span>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress-fill pets" id="fill-pets"></div>
-                    </div>
-                </div>
-
-                <div class="progress-item">
-                    <div class="progress-header">
-                        <span class="progress-label">Walls</span>
-                        <span class="progress-percent" id="percent-walls">--%</span>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress-fill walls" id="fill-walls"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Category Navigation -->
-        <section class="category-nav">
-            <div class="category-tabs">
-                <button class="category-tab active" data-category="defenses">Defenses</button>
-                <button class="category-tab" data-category="structures">Structures</button>
-                <button class="category-tab" data-category="lab">Lab</button>
-                <button class="category-tab" data-category="heroes">Heroes</button>
-                <button class="category-tab" data-category="equipment">Equipment</button>
-                <button class="category-tab" data-category="pets">Pets</button>
-                <button class="category-tab" data-category="walls">Walls</button>
-            </div>
-
-            <div class="filter-controls">
-                <label class="filter-checkbox">
-                    <input type="checkbox" id="hideMaxed">
-                    <span>Hide Maxed</span>
-                </label>
-                <label class="filter-checkbox">
-                    <input type="checkbox" id="hideSupercharge">
-                    <span>Hide Supercharges</span>
-                </label>
-                <input type="text" class="search-bar" id="searchBar" placeholder="E.g. Barbarian Puppet">
-            </div>
-        </section>
-
-        <!-- Upgrade Tables Container -->
-        <div id="upgradeTablesContainer">
-            <!-- Tables will be dynamically rendered here -->
         </div>
     </div>
 
-    <!-- Upload Modal -->
-    <div class="modal" id="uploadModal">
+    <div id="tracker-app" class="app-container" style="display: none;">
+        <div class="app-inner-container">
+            <!-- 1. Header Section -->
+            <header class="main-header">
+                <div class="header-content">
+                    <div class="player-identity">
+                        <h1 id="villageName" class="village-name">Player Name <i class="fas fa-share-alt share-icon"
+                                title="Share"></i></h1>
+                        <div class="player-tag-row">
+                            <span id="playerTag" class="player-tag">#TAG</span>
+                            <a href="#" id="playerLink" class="external-link"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-divider"></div>
+            </header>
+
+            <!-- 2. Village Overview -->
+            <section class="village-overview-panel">
+                <div class="overview-content">
+                    <!-- Left: TH Image -->
+                    <div class="th-section">
+                        <div class="th-image-container">
+                            <img id="thImage" src="images/entities/1_18.png" alt="Town Hall 18" class="th-image">
+                        </div>
+                    </div>
+
+                    <!-- Right: Stats & Actions -->
+                    <div class="stats-section">
+                        <div class="stats-header">
+                            <h2 id="thBadge" class="th-title">Town Hall --</h2>
+                        </div>
+
+                        <!-- Compact Progress Bars -->
+                        <div class="compact-progress-list">
+                            <!-- Structures -->
+                            <div class="progress-row" id="row-structures">
+                                <div class="progress-info">
+                                    <span class="p-label">Structures</span>
+                                </div>
+                                <div class="progress-track">
+                                    <span class="p-value-overlay" id="percent-structures">0%</span>
+                                    <div class="progress-fill stripe-blue" id="fill-structures" style="width: 0%"></div>
+                                </div>
+                            </div>
+
+                            <div class="progress-row" id="row-supercharge">
+                                <div class="progress-info">
+                                    <span class="p-label">Supercharge</span>
+                                </div>
+                                <div class="progress-track">
+                                    <span class="p-value-overlay" id="percent-supercharge">0%</span>
+                                    <div class="progress-fill stripe-blue" id="fill-supercharge" style="width: 0%">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Crafted Def -->
+                            <div class="progress-row" id="row-crafted">
+                                <div class="progress-info">
+                                    <span class="p-label">Crafted Def.</span>
+                                </div>
+                                <div class="progress-track">
+                                    <span class="p-value-overlay" id="percent-crafted">0%</span>
+                                    <div class="progress-fill stripe-blue" id="fill-crafted" style="width: 0%"></div>
+                                </div>
+                            </div>
+
+                            <!-- Lab -->
+                            <div class="progress-row" id="row-lab">
+                                <div class="progress-info">
+                                    <span class="p-label">Lab</span>
+                                </div>
+                                <div class="progress-track">
+                                    <span class="p-value-overlay" id="percent-lab">0%</span>
+                                    <div class="progress-fill stripe-blue" id="fill-lab" style="width: 0%"></div>
+                                </div>
+                            </div>
+
+                            <!-- Heroes -->
+                            <div class="progress-row" id="row-heroes">
+                                <div class="progress-info">
+                                    <span class="p-label">Heroes</span>
+                                </div>
+                                <div class="progress-track">
+                                    <span class="p-value-overlay" id="percent-heroes">0%</span>
+                                    <div class="progress-fill stripe-blue" id="fill-heroes" style="width: 0%"></div>
+                                </div>
+                            </div>
+
+                            <!-- Equipment -->
+                            <div class="progress-row" id="row-equipment">
+                                <div class="progress-info">
+                                    <span class="p-label">Equipment</span>
+                                </div>
+                                <div class="progress-track">
+                                    <span class="p-value-overlay" id="percent-equipment">0%</span>
+                                    <div class="progress-fill stripe-blue" id="fill-equipment" style="width: 0%"></div>
+                                </div>
+                            </div>
+
+                            <!-- Pets -->
+                            <div class="progress-row" id="row-pets">
+                                <div class="progress-info">
+                                    <span class="p-label">Pets</span>
+                                </div>
+                                <div class="progress-track">
+                                    <span class="p-value-overlay" id="percent-pets">0%</span>
+                                    <div class="progress-fill stripe-blue" id="fill-pets" style="width: 0%"></div>
+                                </div>
+                            </div>
+
+                            <!-- Walls -->
+                            <div class="progress-row" id="row-walls">
+                                <div class="progress-info">
+                                    <span class="p-label">Walls</span>
+                                </div>
+                                <div class="progress-track">
+                                    <span class="p-value-overlay" id="percent-walls">0%</span>
+                                    <div class="progress-fill stripe-blue" id="fill-walls" style="width: 0%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="overview-actions">
+                            <button class="btn-api" id="apiUpdateBtn"><i class="fas fa-sync"></i> API</button>
+                            <button class="btn-upload" id="uploadBtn"><i class="fas fa-upload"></i> Upload</button>
+                        </div>
+
+                        <!-- BOB & Switch -->
+                        <div class="bob-switch-row">
+                            <div class="bob-status" id="bobStatusBox">
+                                <i class="fas fa-robot"></i>
+                                <div class="bob-text">
+                                    <span class="bob-title">B.O.B Status:</span>
+                                    <span class="bob-val" id="bobStatusText">--</span>
+                                </div>
+                            </div>
+                            <button class="btn-switch" id="villageSwitchBtn">Switch to Builder Base</button>
+                        </div>
+                    </div>
+
+                    <!-- Builder Breakdown Section -->
+                    <div class="builder-breakdown-section">
+                        <h3 class="builder-section-title">Builder Status</h3>
+                        <div class="builder-list" id="builderList">
+                            <!-- Builder 1 -->
+                            <div class="builder-row" id="builder-1">
+                                <div class="builder-icon">
+                                    <img src="images/entities/builder.png" alt="Builder 1"
+                                        onerror="this.style.display='none'">
+                                    <span class="builder-fallback">🔨</span>
+                                </div>
+                                <div class="builder-info">
+                                    <span class="builder-name">Builder 1</span>
+                                    <div class="builder-status idle">
+                                        <span class="idle-text">Builder Idle!</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Builder 2 -->
+                            <div class="builder-row" id="builder-2">
+                                <div class="builder-icon">
+                                    <img src="images/entities/builder.png" alt="Builder 2"
+                                        onerror="this.style.display='none'">
+                                    <span class="builder-fallback">🔨</span>
+                                </div>
+                                <div class="builder-info">
+                                    <span class="builder-name">Builder 2</span>
+                                    <div class="builder-status idle">
+                                        <span class="idle-text">Builder Idle!</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Builder 3 -->
+                            <div class="builder-row" id="builder-3">
+                                <div class="builder-icon">
+                                    <img src="images/entities/builder.png" alt="Builder 3"
+                                        onerror="this.style.display='none'">
+                                    <span class="builder-fallback">🔨</span>
+                                </div>
+                                <div class="builder-info">
+                                    <span class="builder-name">Builder 3</span>
+                                    <div class="builder-status idle">
+                                        <span class="idle-text">Builder Idle!</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Builder 4 -->
+                            <div class="builder-row" id="builder-4">
+                                <div class="builder-icon">
+                                    <img src="images/entities/builder.png" alt="Builder 4"
+                                        onerror="this.style.display='none'">
+                                    <span class="builder-fallback">🔨</span>
+                                </div>
+                                <div class="builder-info">
+                                    <span class="builder-name">Builder 4</span>
+                                    <div class="builder-status idle">
+                                        <span class="idle-text">Builder Idle!</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Builder 5 -->
+                            <div class="builder-row" id="builder-5">
+                                <div class="builder-icon">
+                                    <img src="images/entities/builder.png" alt="Builder 5"
+                                        onerror="this.style.display='none'">
+                                    <span class="builder-fallback">🔨</span>
+                                </div>
+                                <div class="builder-info">
+                                    <span class="builder-name">Builder 5</span>
+                                    <div class="builder-status idle">
+                                        <span class="idle-text">Builder Idle!</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Builder 6 -->
+                            <div class="builder-row" id="builder-6">
+                                <div class="builder-icon">
+                                    <img src="images/entities/builder.png" alt="Builder 6"
+                                        onerror="this.style.display='none'">
+                                    <span class="builder-fallback">🔨</span>
+                                </div>
+                                <div class="builder-info">
+                                    <span class="builder-name">Builder 6</span>
+                                    <div class="builder-status idle">
+                                        <span class="idle-text">Builder Idle!</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Goblin Builder (Hidden by default) -->
+                            <div class="builder-row goblin-builder" id="builder-goblin" style="display: none;">
+                                <div class="builder-icon goblin">
+                                    <img src="images/entities/goblin_builder.png" alt="Goblin Builder"
+                                        onerror="this.style.display='none'">
+                                    <span class="builder-fallback">👺</span>
+                                </div>
+                                <div class="builder-info">
+                                    <span class="builder-name goblin-name">Goblin Builder</span>
+                                    <div class="builder-status idle">
+                                        <span class="idle-text">Builder Idle!</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. Dashboard Status Bar -->
+            <!-- Dashboard Status Bar Removed -->
+
+            <!-- 4. Legend & Footer Links -->
+            <div class="legend-footer-row">
+                <div class="legend-keys">
+                    <span class="legend-label">Key:</span>
+                    <span class="key-item"><span class="box-green"></span> = Complete</span>
+                    <span class="key-item"><span class="box-yellow"></span> = Upgrading</span>
+                    <span class="key-item"><span class="box-grey"></span> = Outstanding upgrades</span>
+                </div>
+                <div class="footer-actions">
+                    <a href="#" class="footer-link"><i class="fas fa-share-alt"></i> Share your progress</a>
+                    <a href="#" class="footer-link"><i class="fas fa-bell"></i> Notification Settings</a>
+                </div>
+            </div>
+
+            <!-- 5. Navigation Tabs -->
+            <nav class="category-nav-bar">
+                <div class="nav-scroll-container">
+                    <button class="nav-tab active" data-category="defenses">
+                        <span class="tab-name">Defenses</span>
+                        <span class="tab-count">↑ (3)</span>
+                    </button>
+                    <button class="nav-tab" data-category="guardians">
+                        <span class="tab-name">Guardians</span>
+                    </button>
+                    <button class="nav-tab alert" data-category="crafted">
+                        <span class="tab-name">Crafted Def.</span>
+                        <span class="tab-count">↑ (1)</span>
+                    </button>
+                    <button class="nav-tab" data-category="traps">
+                        <span class="tab-name">Traps</span>
+                    </button>
+                    <button class="nav-tab" data-category="army">
+                        <span class="tab-name">Army</span>
+                    </button>
+                    <button class="nav-tab alert" data-category="resources">
+                        <span class="tab-name">Resources</span>
+                        <span class="tab-count">↑ (1)</span>
+                    </button>
+                    <button class="nav-tab" data-category="troops">
+                        <span class="tab-name">Troops</span>
+                    </button>
+                    <button class="nav-tab" data-category="spells">
+                        <span class="tab-name">Spells</span>
+                    </button>
+                    <button class="nav-tab" data-category="dark-troops">
+                        <span class="tab-name">Dark Troops</span>
+                    </button>
+                    <button class="nav-tab" data-category="sieges">
+                        <span class="tab-name">Sieges</span>
+                    </button>
+                    <button class="nav-tab" data-category="heroes">
+                        <span class="tab-name">Heroes</span>
+                    </button>
+                    <button class="nav-tab" data-category="equipment">
+                        <span class="tab-name">Equipment</span>
+                    </button>
+                    <button class="nav-tab alert" data-category="pets">
+                        <span class="tab-name">Pets</span>
+                        <span class="tab-count">↑ (1)</span>
+                    </button>
+                    <button class="nav-tab" data-category="walls">
+                        <span class="tab-name">Walls</span>
+                    </button>
+
+                </div>
+                <div class="loading-bar-container">
+                    <div class="loading-bar" style="width: 80%"></div>
+                </div>
+            </nav>
+
+            <!-- 6. Main Content Grid -->
+            <div class="main-content-grid">
+                <!-- Left: Upgrade Tables -->
+                <div class="upgrade-list-column">
+                    <div class="list-header-controls">
+                        <h2 class="section-heading" id="currentSectionTitle">Defenses <i class="fas fa-cog"></i></h2>
+                        <div class="list-actions">
+                            <button class="btn-tool btn-loot-planner"><i class="fas fa-coins"></i> Loot Planner</button>
+                            <button class="btn-tool btn-edit-levels"><i class="fas fa-edit"></i> Edit Levels</button>
+                        </div>
+                    </div>
+
+                    <div class="boosts-banner">
+                        <span class="boost-title">No Boosts Active:</span> If the costs and times don't match ingame,
+                        set
+                        the <a href="#">Boosts</a>. <i class="fas fa-question-circle"></i>
+                    </div>
+
+
+                    <div class="controls-container"
+                        style="margin-bottom: 1rem; display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+                        <input type="text" id="searchBar" placeholder="Search upgrades..." class="search-input"
+                            style="padding: 0.5rem; border-radius: 6px; border: 1px solid #2d3748; background: #1a202c; color: white; flex: 1; min-width: 150px;">
+                        <div class="toggle-container" style="display: flex; align-items: center; gap: 0.5rem;">
+                            <input type="checkbox" id="hideMaxed">
+                            <label for="hideMaxed" style="color: #a0aec0; cursor: pointer; font-size: 0.9rem;">Hide
+                                Maxed</label>
+                        </div>
+                        <div class="toggle-container" style="display: flex; align-items: center; gap: 0.5rem;">
+                            <input type="checkbox" id="hideSupercharges">
+                            <label for="hideSupercharges"
+                                style="color: #a0aec0; cursor: pointer; font-size: 0.9rem;">Hide Supercharges</label>
+                        </div>
+                        <span class="filter-info"
+                            style="color: #eab308; font-weight: 600; font-size: 0.85rem; margin-left: auto;">TH16
+                            Supercharge Available</span>
+                    </div>
+
+                    <div id="upgradeTablesContainer">
+                        <!-- Stats Bar -->
+                        <div class="stats-bar" id="statsBar">
+                            <div class="stat-card">Total: <span id="stat-total">0</span></div>
+                            <div class="stat-card stat-maxed">Maxed: <span id="stat-maxed">0</span></div>
+                            <div class="stat-card stat-upg">Upgrading: <span id="stat-upg">0</span></div>
+                        </div>
+
+                        <!-- Table -->
+                        <table id="defenseTable" class="defense-table" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th class="col-defense">Defense</th>
+                                    <th class="col-level">Level</th>
+                                    <th class="col-upgrades">Upgrades</th>
+                                </tr>
+                            </thead>
+                            <tbody id="defenseTableBody">
+                                <!-- Rows will be rendered here -->
+                                <tr>
+                                    <td colspan="3"
+                                        style="text-align:center; padding: 2rem; color: var(--text-secondary);">
+                                        Waiting for village data...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Right: Sidebar -->
+                <div class="sidebar-column">
+                    <!-- Main Remaining Section -->
+                    <div id="sidebar-main-section">
+                        <h3 class="sidebar-heading" id="sidebar-main-title">Remaining</h3>
+                        <div class="sidebar-card">
+                            <div class="card-row header-row">
+                                <span>Resource</span>
+                                <span>Total</span>
+                            </div>
+                            <!-- Dynamic Content will be injected here -->
+                            <div id="sidebar-main-content">
+                                <div class="card-row">
+                                    <div class="res-label">Loading...</div>
+                                </div>
+                            </div>
+                            <div class="card-row time-row" id="sidebar-main-time">
+                                <div class="res-label"><i class="far fa-clock"></i> Time</div>
+                                <div class="time-val-group">
+                                    <div class="total-time">Total: <br><strong id="main-time-total">--</strong></div>
+                                    <div class="builder-time">With 6 builders: <br><strong
+                                            id="main-time-builders">--</strong></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Supercharge Section (Hidden by default) -->
+                    <div id="sidebar-supercharge-section" style="display: none; margin-top: 1.5rem;">
+                        <h3 class="sidebar-heading" style="color: #60a5fa;"><i class="fas fa-bolt"
+                                style="color:#facc15; margin-right:8px;"></i>Supercharge</h3>
+                        <div class="sidebar-card" style="border-color: rgba(96, 165, 250, 0.3);">
+                            <div class="card-row header-row">
+                                <span>Resource</span>
+                                <span>Total</span>
+                            </div>
+                            <div id="sidebar-supercharge-content">
+                                <!-- Dynamic Content -->
+                            </div>
+                            <div class="card-row time-row">
+                                <div class="res-label"><i class="far fa-clock"></i> Time</div>
+                                <div class="time-val-group">
+                                    <div class="total-time">Total: <br><strong id="super-time-total">--</strong></div>
+                                    <div class="builder-time">With 6 builders: <br><strong
+                                            id="super-time-builders">--</strong></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Support / Ad Box -->
+                    <div class="support-box">
+                        <h4>Buying a Gold Pass, Gems or an offer?</h4>
+                        <p>Use this button to set my creator code and Supercell will support my work with a % of your
+                            spend
+                            for 7 days. Thank you!</p>
+                        <a href="https://link.clashofclans.com/en/?action=SupportCreator&id=Ninja" target="_blank"
+                            class="btn-creator">
+                            <i class="fas fa-user-check"></i> Use Code: Ninja
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Modals -->
+    <div id="uploadModal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
                 <h2 class="modal-title">Upload Village Data</h2>
-                <button class="modal-close" id="modalClose">&times;</button>
+                <button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button>
             </div>
-            <textarea class="json-textarea" id="jsonInput"
-                placeholder="Paste your village JSON data here..."></textarea>
-            <div class="modal-actions">
-                <button class="btn-primary" id="parseBtn">Analyze Village</button>
-                <button class="btn-secondary" id="demoBtn">Load Demo Data</button>
+            <div class="modal-body">
+                <p style="margin-bottom:1rem; color:var(--text-secondary);">Paste your village JSON data below:</p>
+                <textarea id="jsonInput" class="json-textarea" placeholder="{...}"></textarea>
+                <div class="modal-actions">
+                    <button id="parseBtn" class="btn-primary">Load Data</button>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- Scripts -->
-    <script src="calc_structures.js"></script>
-    <script src="calc_lab.js"></script>
-    <script src="calc_heroes.js"></script>
-    <script src="calc_heroes_cost.js"></script>
-    <script src="calc_equipment.js"></script>
-    <script src="calc_pets.js"></script>
-    <script src="calc_walls.js"></script>
-    <script src="analyze_upgrades.js"></script>
-    <script src="upgrade_tracker_ui.js"></script>
+    <script src="buildingImageLoader.js"></script>
+    <script src="villageFilter.js"></script>
+    <script src="tableview_logic.js"></script>
+    <script src="calculation/calc_api_progress.js"></script>
+    <script src="hybrid_loader.js"></script>
+    <script src="calculation/calc_structures.js"></script>
+    <script src="calculation/calc_lab.js"></script>
+    <script src="calculation/calc_heroes.js"></script>
+    <script src="calculation/calc_equipment.js"></script>
+    <script src="calculation/calc_pets.js"></script>
+    <script src="calculation/calc_walls.js"></script>
+    <script src="calculation/analyze_upgrades.js"></script>
     <script src="render_stats.js"></script>
-    <script src="render_debug.js"></script>
     <script src="script.js"></script>
 </body>
 
